@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "DoctorsScheduleList";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+    <input id="docid" value="@ViewBag.DocId" type="hidden" />
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+
+                @Html.Raw(ViewBag.TableData)
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        function CreateDetails() {
+            var doc = $('#docid').val();
+            var form = $('<form action="/Settings/DoctorsScheduleCreate" method="post" target="_self">' +
+            '<input type="text" name="Doc" value="' + doc + '" />' +
+            '</form>');
+            $('body').append(form);
+            form.submit();
+        }
+
+        function EditDetails(id) {
+            var doc = $('#docid').val();
+            var form = $('<form action="/Settings/DoctorsScheduleCreate" method="post" target="_self">' +
+            '<input type="text" name="Id" value="' + id + '" />' +
+            '<input type="text" name="Doc" value="' + doc + '" />' +
+            '</form>');
+            $('body').append(form);
+            form.submit();
+        }
+
+        function DeleteDetails(Id, _this) {
+            var active = $(_this).closest('tr').find('.IsActive');
+            if (active.text() == "Inactive")
+                toastr.info('Sorry, this is already Inactive.', 'Info');
+            else if (confirm("Are you sure to Inactive this?")) {
+                $.post('/Settings/DoctorsScheduleDeleteById?Id=' + Id, function (data) {
+                    if (data.Success) active.text('Inactive');
+                    else toastr.error(data.Message, 'Error!');
+                });
+            }
+        }
+    </script>

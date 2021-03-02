@@ -1,0 +1,111 @@
+﻿@{
+    ViewBag.Title = "NewAppointment";
+    ViewBag.ActiveMy = "active";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+@model HCare.Models.HcDoctorAppointmentEntity
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mt-30 mb-20">
+          @Html.Raw(ViewBag.SiteMyMenuList)
+        </div>
+        <div class="col-md-8 mt-30 mb-20">
+            @*Content Area Start*@
+            @using (Html.BeginForm(null, null, FormMethod.Post, new { id = "InputForm" }))
+            {
+                <div class="form-group  row">
+                    <div class="form-group col-md-8">
+                        <div class="form-group row col-sm-12">
+                            <label>Department </label>
+                            @Html.DropDownList("Department", (List<SelectListItem>)ViewBag.ListDepartment, new { @class = "form-control" })
+                        </div>
+                        <div class="form-group row col-sm-12">
+                            <label>Doctor <span class="text-danger"> *</span></label>
+                            @Html.DropDownListFor(m => m.Doctorid, (List<SelectListItem>)ViewBag.BlankList, new { @class = "form-control" })
+                        </div>
+                        <div class="form-group row col-sm-12">
+                            <label>Date <span class="text-danger"> *</span></label>
+                            @Html.TextBoxFor(m => m.Dates, new { @class = "form-control", @type = "date" })
+                        </div>
+                        <div class="form-group row col-sm-12">
+                            <label>Time <span class="text-danger"> *</span></label>
+                            @Html.DropDownListFor(m => m.Timeid, (List<SelectListItem>)ViewBag.BlankList, new { @class = "form-control" })
+                        </div>
+                        <div class="form-group row col-sm-12">
+                            <label>Reasons <span class="text-danger"> *</span></label>
+                            @Html.TextAreaFor(m => m.Reasons, new { @class = "form-control" })
+                        </div>
+                        <div class="form-group row col-sm-12">
+                            <label>Payment Method<span class="text-danger"> *</span></label> 
+                            @{
+                                int Count = 1;
+                                foreach (SelectListItem dr in ViewBag.ListPaymentMethod)
+                                {
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    @Html.RadioButtonFor(m => m.Paymethod, @dr.Value, new { @class = "custom-control-input", @id = "Pay" + Count })
+                                    <label class="custom-control-label" >@dr.Text</label>
+                                </div>
+                                Count++;
+                                }
+                            }
+                        </div>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <div class="form-group row col-sm-12" id='DoctorInformation'>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-12">
+                        <button type="button" id="Submitbtn" class="btn btn-success" > SUBMIT</button>
+                    </div>
+                </div>
+                
+                
+                  @*<div class="appointment-form">
+                           <div class="form-group row">
+                              <label class="col-sm-4 col-form-label">Day of week</label>
+                              <div class="col-sm-8">
+                                @Html.DropDownList("DayOfWeek", (List<SelectListItem>)ViewBag.BlankList, new { @class = "form-control" })
+                              </div>
+                           </div>
+
+                           <div class="form-group row">
+                              <label class="col-sm-5 col-form-label">Select Time</label>
+                              <div class="col-sm-7">
+                                 <select class="form-control">
+                                    <option selected>----Select Time----</option>
+                                    <option value="1">9am - 11am</option>
+                                    <option value="2">12pm - 1pm</option>
+                                    <option value="3">3pm - 5pm</option>
+                                 </select>
+                              </div>
+                           </div>
+                     </div>*@
+                  
+            }
+            @*Content Area End*@
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $('#InputForm').on("change", "#Department", function (event) {
+        $("#DayOfWeek,#Timeid").html("<option value=''>Select...</option>");
+        $.post('/WebAccount/AppointDoctorList?Dep=' + $(this).val(), function (data) { $("#Doctorid").html(data); });
+    });
+    $('#InputForm').on("change", "#Doctorid", function (event) {
+        $("#Timeid").html("<option value=''>Select...</option>");
+        $.post('/WebAccount/AppointDoctorInfo?Doc=' + $(this).val(), function (data) { $("#DoctorInformation").html(data); });
+    });
+    $('#InputForm').on("change", "#Dates", function (event) {
+        $.post('/WebAccount/AppointDoctorTimes?Doc=' + $('#Doctorid').val() + '&Dt=' + $(this).val(), function (data) { $("#Timeid").html(data.TimeList); if (!data.Success) { $("#Dates").val(''); } });
+    });
+    $('#InputForm').on("click", "#Submitbtn", function (event) {
+        if (!$('#Doctorid').val() || !$('#Dates').val() || !$('#Timeid').val() || !$('#Reasons').val() || !$('input[name="Paymethod"]:checked').val()) { alert('Sorry, Please Check Required Fields.'); return false; }
+        else if (confirm("Are you sure to Submit this?"))
+            $.post('/WebAccount/SaveAppointment', $("#InputForm").serialize(), function (data) { alert(data.Message); if (data.Success) { window.open('/WebAccount/ManageAppointment', '_self'); } });
+    });
+</script>

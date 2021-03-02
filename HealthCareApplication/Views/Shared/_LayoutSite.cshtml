@@ -1,0 +1,634 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    
+      <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+    <title>@ViewBag.Title</title>
+
+    <link rel="icon" href="@Url.Content("~/Content/rkscript/images/favicon.png")" type="image/x-icon"/>
+    
+      <link href="@Url.Content("~/Content/rkscript/css/bootstrap.min.css")" rel="stylesheet" type="text/css" />
+      <link href="@Url.Content("~/Content/rkscript/css/jquery-ui.min.css")" rel="stylesheet" type="text/css" />
+      <link href="@Url.Content("~/Content/rkscript/css/animate.css")" rel="stylesheet" type="text/css" />
+      <link href="@Url.Content("~/Content/rkscript/css/css-plugin-collections.css")" rel="stylesheet" type="text/css" />
+    
+      <link href="@Url.Content("~/Content/rkscript/css/style-main.css")" rel="stylesheet" type="text/css" />
+      <link href="@Url.Content("~/Content/rkscript/css/style.css")" rel="stylesheet" type="text/css" />
+     <link href="@Url.Content("~/Content/rkscript/css/font-awesome.min.css")" rel="stylesheet" type="text/css" />
+
+      <link href="@Url.Content("~/Content/rkscript/css/preloader.css")" rel="stylesheet" type="text/css" />
+  
+      <link href="@Url.Content("~/Content/rkscript/css/custom-bootstrap-margin-padding.css")" rel="stylesheet" type="text/css" />
+    
+      <link href="@Url.Content("~/Content/rkscript/css/responsive.css")" rel="stylesheet" type="text/css" />
+     
+      <link href="@Url.Content("~/Content/rkscript/css/colors/theme-skin-color-set1.css")" rel="stylesheet" type="text/css" />
+      
+      @*<link href="@Url.Content("~/Content/rkscript/css/simplePagination.css")" rel="stylesheet" type="text/css">*@
+      <script src="@Url.Content("~/Content/rkscript/js/jquery-3.5.1.js")" type="text/javascript"></script>
+      
+      <script src="@Url.Content("~/Content/rkscript/js/jquery-2.2.4.min.js")" type="text/javascript"></script>
+      <script src="@Url.Content("~/Content/rkscript/js/jquery-ui.min.js")" type="text/javascript"></script>
+      <script src="@Url.Content("~/Content/rkscript/js/bootstrap.min.js")" type="text/javascript"></script>
+        <script src="https://kit.fontawesome.com/a9d0189b67.js" crossorigin="anonymous"></script>
+     
+      @*<script src="@Url.Content("~/Content/rkscript/js/jquery.simplePagination.js")" type="text/javascript"></script>*@
+      <script src="@Url.Content("~/Content/rkscript/js/jquery-plugin-collection.js")" type="text/javascript"></script>
+      
+<style type="text/css">
+.boxImg
+{
+    width:270px;
+    height:200px;
+    object-fit:cover;
+    object-position: 0 0;
+}
+.cartInput {
+  width: 100px;
+  padding: 3px;
+  margin: 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.cart-tbody tr td .btn
+{
+    font-size:16px !important;
+    padding: 5px 15px 5px 10px !important;
+    margin: 0px !important;
+    line-height:1 !important;
+}
+.iPointer
+{
+    cursor:pointer;
+}
+         .jp-card {
+         box-shadow: 0px 1px 8px #00000033;
+         border-radius: 5px;
+         min-height: 360px;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         }
+         .mb-8{
+         margin-bottom: 8px;
+         }
+         .discount{
+         font-size: 14px;
+         }
+         .sale p {
+         color: white;
+         padding: 3px 15px;
+         font-weight: 800;
+         text-shadow: none;
+         margin: 0px;
+         }
+         .sale {
+         background: orange;
+         position: absolute;
+         }
+
+    .custom-checkbox, custom-control-inline {
+        padding: 3px;
+    }
+    .form-control {
+        border:1px solid Green;
+    }
+   
+
+/*
+
+.container-mini
+{
+    padding: 20px !important;
+}
+
+         .product-card{
+         box-shadow: 1px 1px 8px #0000001a;
+         background: #ffffff;
+         border-radius: 7px;
+         min-height: 303px;
+         }
+         .sidebar-right{
+         background: #fff;
+         padding: 20px !important;
+         border-radius: 9px;
+         box-shadow: 0 0px 12px #0000001a;
+         }
+         .product-title{
+         white-space: pre;
+         word-break: break-all;
+         width: 94%;
+         overflow: hidden;
+         text-align: center;
+         text-overflow: ellipsis;
+         }*/
+</style>
+
+</head>
+
+<body class="has-side-panel side-panel-right fullwidth-page">
+      <div id="wrapper">
+    
+         <div id="preloader">
+            <div id="spinner">
+               <div class="preloader-dot-loading">
+                  <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
+               </div>
+            </div>
+            <div id="disable-preloader" class="btn btn-default btn-sm">Disable Preloader</div>
+         </div>
+     
+         <header id="header" class="header">
+            <div class="header-middle p-0 bg-white xs-text-center">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-xs-12 col-sm-12 col-md-3">
+                        <a class="menuzord-brand pull-left flip sm-pull-center mb-15" href="@("/")"><img src="@("/Content/rkscript/images/logo.jpg")" alt="" /></a>
+                     </div>
+                     <div class="col-xs-12 col-sm-12 col-md-9">
+                        <div class="header-widget-contact-info-box sm-text-center">
+                           <div class="media element contact-info">
+                              <div class="media-left">
+                                 <a href="#">
+                                 <i class="fa fa-envelope text-theme-colored font-icon sm-display-block"></i>
+                                 </a>
+                              </div>
+                              <div class="media-body">
+                                 <a href="#" class="title">Mail Us</a>
+                                 <h5 class="media-heading subtitle">info@yourdomain.com</h5>
+                              </div>
+                           </div>
+                           <div class="media element contact-info">
+                              <div class="media-left">
+                                 <a href="#">
+                                 <i class="fa fa-phone-square text-theme-colored font-icon sm-display-block"></i>
+                                 </a>
+                              </div>
+                              <div class="media-body">
+                                 <a href="#" class="title">Call Us</a>
+                                 <h5 class="media-heading subtitle">+(012) 345 6789</h5>
+                              </div>
+                           </div>
+                           <div class="media element contact-info">
+                              <div class="media-left">
+                                 <a href="#">
+                                 <i class="fa fa-building-o text-theme-colored font-icon sm-display-block"></i>
+                                 </a>
+                              </div>
+                              <div class="media-body">
+                                 <a href="#" class="title">Location</a>
+                                 <h5 class="media-heading subtitle">121 King Street, Melbourne</h5>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header-nav">
+               <div class="header-nav-wrapper navbar-scrolltofixed bg-lighter">
+                  <div class="container-fluid">
+                     <nav id="menuzord" class="menuzord blue no-bg">
+                        <ul class="menuzord-menu">
+                           <li class="@ViewBag.ActiveHome"><a href="@("/")" class="text-uppercase">Home</a></li>
+                           <li class="@ViewBag.ActiveCons"><a href="@("/Home/Consultants")" class="text-uppercase">Consultants</a></li>
+                           <li class="@ViewBag.ActiveLab"><a href="@("/Home/LabTest")" class="text-uppercase">Lab Test</a></li>
+                           <li class="@ViewBag.ActiveMedi"><a href="@("/Home/Medicine")" class="text-uppercase">Medicine</a></li>
+                           <li class="@ViewBag.ActiveShop"><a href="@("/Home/Eshop")" class="text-uppercase">E-Shop</a></li>
+                           <li class="@ViewBag.ActiveMy"><a href="@("/WebAccount/MyBoard")" class="text-uppercase">My Account</a></li>
+                            
+                        </ul>
+
+                                 
+
+                  
+                        <div class="pull-right sm-pull-none mb-sm-15">
+
+
+                         
+                            <ul class="list-inline nav-side-icon-list">
+                             <a class="btn btn-colored btn-flat pull-left mt-15 mt-sm-10 pt-10 pb-10" data-toggle="modal" data-target="#searchBox"> <i class="fa fa-search"></i> &nbsp; Search</a>
+                                @if (Session["UserId"] != null)
+                                {
+                                    if (Session["UserType"] == "Admin")
+                                    {
+                                        <li><a href="@("/AdmHome/Dashboard")" title="Admin Panel"><i class="fa fa-users" style="font-size:20px; color:Green; margin-top:5px; margin-right:-5px;"></i></a></li>
+}
+                                    <li><a href="@("/WebAccount/AccessOut")" title="Log Out"><i class="fa fa-power-off" style="font-size:20px; color:Red; margin-top:7px; margin-right:-10px;"></i></a></li>
+                                }
+                                else
+                                {
+                                    <li><a href="@("/WebAccount/Login")" title="Log In"><i class="fa fa-user-circle" style="font-size:22px; color:Green; margin-top:7px; margin-right:-10px;"></i></a></li>
+                                }
+                                <li>
+                                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#cart"><i class="icon_cart_alt"></i> (<span class="cart-tcount">0</span>)</button>
+                                </li>
+                                <a class="btn btn-colored btn-flat btn-theme-colored mt-15 mt-sm-10 pt-10 pb-10" href="@("/WebAccount/NewAppointment")">Appointment</a>
+                                <a class="btn  btn-flat btn-outline-success mt-15 mt-sm-10 pt-10 pb-10" href="@("/")">Download app</a>
+                            </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </header>
+         
+         
+         <div class="main-content">
+            @RenderBody()
+        </div>
+
+         <!-- Footer -->
+         <footer id="footer" class="footer">
+            <div class="container pt-70 pb-40">
+               <div class="row border-bottom-black">
+                  <div class="col-sm-6 col-md-3">
+                     <div class="widget dark">
+                        <img class="mt-10 mb-20" alt="" src="@Url.Content("~/Content/rkscript/images/logo.jpg")">
+                        <p>203, Envato Labs, Behind Alis Steet, Melbourne, Australia.</p>
+                        <ul class="mt-5">
+                           <li class="m-0 pl-0 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i> <a class="text-gray" href="#">123-456-789</a> </li>
+                           <li class="m-0 pl-0 pr-10"> <i class="fa fa-envelope-o text-theme-colored mr-5"></i> <a class="text-gray" href="#">contact@yourdomain.com</a> </li>
+                           <li class="m-0 pl-0 pr-10"> <i class="fa fa-globe text-theme-colored mr-5"></i> <a class="text-gray" href="#">www.yourdomain.com</a> </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                     <div class="widget dark">
+                        <h4 class="widget-title">Useful Links</h4>
+                        <ul class="list-border">
+                           <li><a href="inde.html">Home</a></li>
+                           <li><a href="about.html">About us</a></li>
+                           <li><a href="t&c.html">Terms and Condiotion</a></li>
+                           <li><a href="faq.html">Faq's</a></li>
+                           <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                     <div class="widget dark">
+                        <h4 class="widget-title">Latest News</h4>
+                        <div class="latest-posts">
+                           <article class="post media-post clearfix pb-0 mb-10">
+                              <a href="blog-single-right-sidebar.html" class="post-thumb"><img alt="" src="http://placehold.it/80x55"></a>
+                              <div class="post-right">
+                                 <h5 class="post-title mt-0 mb-5"><a href="blog-single-right-sidebar.html">Sustainable Construction</a></h5>
+                                 <p class="post-date mb-0 font-12">Mar 08, 2015</p>
+                              </div>
+                           </article>
+                           <article class="post media-post clearfix pb-0 mb-10">
+                              <a href="blog-single-right-sidebar.html" class="post-thumb"><img alt="" src="http://placehold.it/80x55"></a>
+                              <div class="post-right">
+                                 <h5 class="post-title mt-0 mb-5"><a href="blog-single-right-sidebar.html">Industrial Coatings</a></h5>
+                                 <p class="post-date mb-0 font-12">Mar 08, 2015</p>
+                              </div>
+                           </article>
+                           <article class="post media-post clearfix pb-0 mb-10">
+                              <a href="blog-single-right-sidebar.html" class="post-thumb"><img alt="" src="http://placehold.it/80x55"></a>
+                              <div class="post-right">
+                                 <h5 class="post-title mt-0 mb-5"><a href="blog-single-right-sidebar.html">Storefront Installations</a></h5>
+                                 <p class="post-date mb-0 font-12">Mar 08, 2015</p>
+                              </div>
+                           </article>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                     <div class="widget dark">
+                        <h4 class="widget-title">Opening Hours</h4>
+                        <div class="opening-hours">
+                           <ul class="list-border">
+                              <li class="clearfix">
+                                 <span> Mon - Tues :  </span>
+                                 <div class="value pull-right flip"> 6.00 am - 10.00 pm </div>
+                              </li>
+                              <li class="clearfix text-white">
+                                 <span> Wednes - Thurs :</span>
+                                 <div class="value pull-right flip"> 8.00 am - 6.00 pm </div>
+                              </li>
+                              <li class="clearfix">
+                                 <span> Fri : </span>
+                                 <div class="value pull-right flip"> 3.00 pm - 8.00 pm </div>
+                              </li>
+                              <li class="clearfix">
+                                 <span> Sun : </span>
+                                 <div class="value pull-right flip"> Closed </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-bottom">
+               <div class="container pt-20 pb-20">
+                  <div class="row">
+                     <div class="col-md-6 sm-text-center">
+                        <p class="font-13 text-black-777 m-0">Copyright &copy;2020 . All Rights Reserved</p>
+                     </div>
+                     <div class="col-md-6 text-right flip sm-text-center">
+                        <div class="widget no-border m-0">
+                           <ul class="styled-icons icon-dark icon-circled icon-sm">
+                              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                              <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                              <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+      </div>
+
+
+    <!-- Modal -->
+<div class="modal fade" id="searchBox" tabindex="-1" role="dialog" aria-labelledby="searchbox" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title text-center" id="exampleModalLabel">Search</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <form class="d-flex">
+             <div class ="row no-gutters">
+                 <div class=" col-md-3 col-lg-3"> 
+                     <select class="form-control" aria-label="Search option select">
+  <option value="med" selected>Medicine</option>
+  <option value="doc">Doctor</option>
+ 
+</select>
+
+                 </div>
+                 <div class=" col-md-6 col-lg-6">  <input type="search" class="form-control" id="searchvalue" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></div>
+                 <div class=" col-md-3 col-lg-3"> <button type="button" class="btn btn-primary">Search</button></div>
+             </div>
+    
+            </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+      <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float:right;"><span aria-hidden="true">&times;</span></button>
+                  <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+               </div>
+               <div class="modal-body">
+                  <table class="table">
+                    <thead>
+                        <tr style="background-color:#f3f2f2"><th width="10%">Catagory</th><th width="20%">Items</th><th width="15%">Price</th><th width="20%">Quantity</th><th width="15%">Total</th><th width="20%">Options</th></tr>
+                    </thead>
+                    <tbody class="cart-tbody"></tbody>
+                  </table>
+               </div>
+               <div class="modal-footer">
+                  <div style="float:left"><b>Total price:</b> $<span class="cart-tamount">0.00</span></div> 
+                  <button type="button" class="btn btn-secondary">View Cart</button>
+                  <button type="button" class="btn btn-primary">Chekcout</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   
+      <script src="@Url.Content("~/Content/rkscript/js/custom.js")" type="text/javascript"></script>
+      
+      <!-- jplist css start -->
+      <link href="@Url.Content("~/Content/rkscript/jplist/css/jplist.list-grid-view.min.css")" rel="stylesheet" type="text/css" />
+      <link href="@Url.Content("~/Content/rkscript/jplist/css/jplist.history-bundle.min.css")" rel="stylesheet" type="text/css" />
+      <link href="@Url.Content("~/Content/rkscript/jplist/css/jplist.pagination-bundle.min.css")" rel="stylesheet" type="text/css" />
+      <link href="@Url.Content("~/Content/rkscript/jplist/css/jplist.textbox-filter.min.css")" rel="stylesheet" type="text/css" />
+      <link href="@Url.Content("~/Content/rkscript/jplist/css/jplist.core.min.css")" rel="stylesheet" type="text/css" />
+      <link href="@Url.Content("~/Content/rkscript/jplist/css/jplist.demo-pages.min.css")" rel="stylesheet" type="text/css" />
+      <link href="@Url.Content("~/Content/rkscript/jplist/css/jplist.filter-toggle-bundle.min.css")" rel="stylesheet" type="text/css" />
+      <!-- jplist css end -->
+      
+      <!-- jPList start -->
+      <!-- jPList core js and css  -->
+      <script src="@Url.Content("~/Content/rkscript/jplist/js/jplist.core.min.js")" type="text/javascript"></script>
+      <!-- jPList sort bundle -->
+      <script src="@Url.Content("~/Content/rkscript/jplist/js/jplist.sort-bundle.min.js")" type="text/javascript"></script>
+      <!-- jPList textbox filter control -->
+      <script src="@Url.Content("~/Content/rkscript/jplist/js/jplist.textbox-filter.min.js")" type="text/javascript"></script>
+      <!-- jPList pagination bundle -->
+      <script src="@Url.Content("~/Content/rkscript/jplist/js/jplist.pagination-bundle.min.js")" type="text/javascript"></script>
+      <!-- jPList history bundle -->
+      <script src="@Url.Content("~/Content/rkscript/jplist/js/jplist.history-bundle.min.js")" type="text/javascript"></script>
+      <!-- jPList toggle bundle -->
+      <script src="@Url.Content("~/Content/rkscript/jplist/js/jplist.filter-toggle-bundle.min.js")" type="text/javascript"></script>
+      <!-- jPList views control -->
+      <script src="@Url.Content("~/Content/rkscript/jplist/js/jplist.list-grid-view.min.js")" type="text/javascript"></script>
+      <script src="@Url.Content("~/Content/rkscript/jplist/js/jplist.filter-dropdown-bundle.min.js")" type="text/javascript"></script>
+
+       <script type="text/javascript">
+           $(document).ready(function () {
+               $('#demo').jplist({
+                   itemsBox: '.list'
+               , itemPath: '.list-item'
+               , panelPath: '.jplist-panel'
+               });
+           });
+
+           function fnGoToDetls(_this) {
+               event.preventDefault();
+               var cdetl = $(_this).data('cdetl');
+               window.open('/WebAccount/ShowDetails/' + cdetl, '_blank');
+           }
+      </script>
+
+    <script type="text/javascript">
+        var fnShoppingCart = (function () {
+            var sCart = [], fnObj = {};
+
+            function cartObj(cat, pid, name, price, qty) {
+                this.cat = cat;
+                this.pid = pid;
+                this.name = name;
+                this.price = parseFloat(price);
+                this.qty = parseFloat(qty);
+            }
+
+            function saveToCart() {
+                sessionStorage.setItem('shoppingCart', JSON.stringify(sCart));
+            }
+
+            function loadToCart() {
+                sCart = JSON.parse(sessionStorage.getItem('shoppingCart'));
+            }
+
+            if (sessionStorage.getItem("shoppingCart") != null) {
+                loadToCart();
+            }
+
+            fnObj.addItemToCart = function (cat, pid, name, price, opt) {
+                for (var cartobj in sCart) {
+                    if (sCart[cartobj].cat == cat && sCart[cartobj].pid == pid) {
+                        if (opt > 0) { sCart[cartobj].qty++; }
+                        else { sCart[cartobj].qty--; }
+                        saveToCart();
+                        return;
+                    }
+                }
+                var cartobj = new cartObj(cat, pid, name, price, 1);
+                sCart.push(cartobj);
+                saveToCart();
+            }
+
+            fnObj.removeFromCart = function (cat, pid) {
+                for (var cartobj in sCart) {
+                    if (sCart[cartobj].cat == cat && sCart[cartobj].pid == pid) {
+                        sCart.splice(cartobj, 1);
+                        break;
+                    }
+                }
+                saveToCart();
+            }
+
+            fnObj.clearCart = function () {
+                cart = [];
+                saveToCart();
+            }
+
+            fnObj.tbodyCart = function () {
+                var tbody = "", tamount = 0, tcount = 0, sl = 1;
+                if (sCart.length > 0) {
+                    for (var cartobj in sCart) {
+                        var cat = sCart[cartobj].cat,
+                        pid = sCart[cartobj].pid,
+                        name = sCart[cartobj].name,
+                        price = sCart[cartobj].price,
+                        qty = sCart[cartobj].qty,
+                        tprice = price * qty;
+                        tamount += tprice;
+                        tcount += qty;
+
+                        tbody += "<tr>" +
+                        "<td id='cat" + sl + "'>" + cat + "</td>" +
+                        "<td id='name" + sl + "'>" + name + "</td>" +
+                        "<td id='price" + sl + "'>" + price.toFixed(2) + "</td>" +
+                        "<td><input type='text' class='item-count cartInput' id='qty" + sl + "' value='" + qty + "' readonly></td>" +
+                        "<td id='tprice" + sl + "'>" + tprice.toFixed(2) + "</td>" +
+                        "<td>" +
+                        "<button class='minus-item input-group-addon btn btn-warning' data-sl=" + sl + ">-</button>" +
+                        "<button class='plus-item input-group-addon btn btn-success' data-sl=" + sl + ">+</button>" +
+                        "<button class='delete-item input-group-addon btn btn-danger' data-sl=" + sl + ">x</button>" +
+                        "<input type='hidden' id='pid" + sl + "' value='" + pid + "'>" +
+                        "</td>" +
+                        "</tr>";
+                        sl++;
+                    }
+                }
+                var obj = {
+                    tbody: tbody,
+                    tamount: tamount.toFixed(2),
+                    tcount: tcount
+                };
+                return obj;
+            }
+
+            return fnObj;
+        })();
+
+        function fnAddToCard(_this, qty) {
+            event.preventDefault();
+            if (!qty) qty = 1;
+            var cdetl = $(_this).data('cdetl').split('__'),
+                cat = cdetl[0],
+                pid = cdetl[1],
+                name = cdetl[2],
+                price = parseFloat(cdetl[3]);
+            if (cat && pid && name && price) {
+                fnShoppingCart.addItemToCart(cat, pid, name, price, qty);
+                displayCart();
+            }
+        }
+
+        function displayCart() {
+            var data = fnShoppingCart.tbodyCart();
+            $('.cart-tbody').html(data.tbody);
+            $('.cart-tamount').text(data.tamount);
+            $('.cart-tcount').text(data.tcount);
+        }
+
+        function clearCart() {
+            var data = fnShoppingCart.clearCart();
+            $('.cart-tbody').html("");
+            $('.cart-tamount').text('0.00');
+            $('.cart-tcount').text('0');
+        }
+
+        function totalCount() {
+            var tamount = 0, tcount = 0;
+            $('.cartInput').each(function () {
+                var sl = $(this).attr("id").match(/\d+/),
+                    qty = parseFloat($('#qty' + sl).val()),
+                    price = parseFloat($('#price' + sl).text()),
+                    tprice = qty * price;
+                $('#tprice' + sl).text(tprice.toFixed(2));
+                tamount += tprice;
+                tcount += qty;
+            });
+            $('.cart-tamount').text(tamount.toFixed(2));
+            $('.cart-tcount').text(tcount);
+        }
+
+        function plusMinusCart(sl, opt) {
+            var cat = $('#cat' + sl).text(),
+                pid = $('#pid' + sl).val(),
+                name = $('#name' + sl).text(),
+                price = parseFloat($('#price' + sl).text()),
+                qty = parseFloat($('#qty' + sl).val()) + opt;
+            if (qty > 0) {
+                $('#qty' + sl).val(qty);
+                totalCount();
+                fnShoppingCart.addItemToCart(cat, pid, name, price, opt);
+            }
+        }
+
+        $('.cart-tbody').on("click", ".delete-item", function (event) {
+            var sl = $(this).data('sl'),
+                cat = $('#cat' + sl).text(),
+                pid = $('#pid' + sl).val();
+            $(this).closest('tr').remove();
+            totalCount();
+            fnShoppingCart.removeFromCart(cat, pid);
+        });
+
+        $('.cart-tbody').on("click", ".minus-item", function (event) {
+            var sl = $(this).data('sl');
+            plusMinusCart(sl, -1);
+        });
+
+        $('.cart-tbody').on("click", ".plus-item", function (event) {
+            var sl = $(this).data('sl');
+            plusMinusCart(sl, 1);
+        });
+
+        displayCart();
+      </script>
+    <script type="text/javascript"> 
+
+        function OpenSearch() {
+            alert("Open modal");
+        }
+    </script>
+   </body>
+</html>

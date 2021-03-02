@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2E6E21B5-F7EB-4151-B17F-7DF4D1E8B461}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HCare.Server</RootNamespace>
+    <AssemblyName>HCare.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\DLL\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\DLL\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\AdmMenuBLL.cs" />
+    <Compile Include="BLL\AdmMenuBLLPartial.cs" />
+    <Compile Include="BLL\AdmMenusubBLL.cs" />
+    <Compile Include="BLL\AdmMenusubBLLPartial.cs" />
+    <Compile Include="BLL\AdmRoledetailsBLL.cs" />
+    <Compile Include="BLL\AdmRoledetailsBLLPartial.cs" />
+    <Compile Include="BLL\AdmRolemasterBLL.cs" />
+    <Compile Include="BLL\AdmRolemasterBLLPartial.cs" />
+    <Compile Include="BLL\HcAboutBLL.cs" />
+    <Compile Include="BLL\HcAboutBLLPartial.cs" />
+    <Compile Include="BLL\HcAssesmentBLL.cs" />
+    <Compile Include="BLL\HcAssesmentBLLPartial.cs" />
+    <Compile Include="BLL\HcBlogBLL.cs" />
+    <Compile Include="BLL\HcBlogBLLPartial.cs" />
+    <Compile Include="BLL\HcCommunicationchannelBLL.cs" />
+    <Compile Include="BLL\HcCommunicationchannelBLLPartial.cs" />
+    <Compile Include="BLL\HcCountryBLL.cs" />
+    <Compile Include="BLL\HcCountryBLLPartial.cs" />
+    <Compile Include="BLL\HcDiseasesBLL.cs" />
+    <Compile Include="BLL\HcDiseasesBLLPartial.cs" />
+    <Compile Include="BLL\HcDoctorAppointmentBLL.cs" />
+    <Compile Include="BLL\HcDoctorAppointmentBLLPartial.cs" />
+    <Compile Include="BLL\HcDoctorassesmentBLL.cs" />
+    <Compile Include="BLL\HcDoctorassesmentBLLPartial.cs" />
+    <Compile Include="BLL\HcDoctorDepartmentsBLL.cs" />
+    <Compile Include="BLL\HcDoctorDepartmentsBLLPartial.cs" />
+    <Compile Include="BLL\HcDoctorinfoBLL.cs" />
+    <Compile Include="BLL\HcDoctorinfoBLLPartial.cs" />
+    <Compile Include="BLL\HcDoctorTimesBLL.cs" />
+    <Compile Include="BLL\HcDoctorTimesBLLPartial.cs" />
+    <Compile Include="BLL\HcEmergencycontactBLL.cs" />
+    <Compile Include="BLL\HcEmergencycontactBLLPartial.cs" />
+    <Compile Include="BLL\HcGuidedetailsBLL.cs" />
+    <Compile Include="BLL\HcGuidedetailsBLLPartial.cs" />
+    <Compile Include="BLL\HcGuidemasterBLL.cs" />
+    <Compile Include="BLL\HcGuidemasterBLLPartial.cs" />
+    <Compile Include="BLL\HcLabTestBLL.cs" />
+    <Compile Include="BLL\HcLabTestBLLPartial.cs" />
+    <Compile Include="BLL\HcMedicahistoryBLL.cs" />
+    <Compile Include="BLL\HcMedicahistoryBLLPartial.cs" />
+    <Compile Include="BLL\HcMedicineBLL.cs" />
+    <Compile Include="BLL\HcMedicineBLLPartial.cs" />
+    <Compile Include="BLL\HcMedicinetypeBLL.cs" />
+    <Compile Include="BLL\HcMedicinetypeBLLPartial.cs" />
+    <Compile Include="BLL\HcOffersBLL.cs" />
+    <Compile Include="BLL\HcOffersBLLPartial.cs" />
+    <Compile Include="BLL\HcOrganizationBLL.cs" />
+    <Compile Include="BLL\HcOrganizationBLLPartial.cs" />
+    <Compile Include="BLL\HcPackagedetailsBLL.cs" />
+    <Compile Include="BLL\HcPackagedetailsBLLPartial.cs" />
+    <Compile Include="BLL\HcPackagemasterBLL.cs" />
+    <Compile Include="BLL\HcPackagemasterBLLPartial.cs" />
+    <Compile Include="BLL\HcPaymentinfoBLL.cs" />
+    <Compile Include="BLL\HcPaymentinfoBLLPartial.cs" />
+    <Compile Include="BLL\HcProductcartBLL.cs" />
+    <Compile Include="BLL\HcProductcartBLLPartial.cs" />
+    <Compile Include="BLL\HcProductcategoryBLL.cs" />
+    <Compile Include="BLL\HcProductcategoryBLLPartial.cs" />
+    <Compile Include="BLL\HcProductorderBLL.cs" />
+    <Compile Include="BLL\HcProductorderBLLPartial.cs" />
+    <Compile Include="BLL\HcServicecenterBLL.cs" />
+    <Compile Include="BLL\HcServicecenterBLLPartial.cs" />
+    <Compile Include="BLL\HcServicesBLL.cs" />
+    <Compile Include="BLL\HcServicesBLLPartial.cs" />
+    <Compile Include="BLL\HcTestCategoryBLL.cs" />
+    <Compile Include="BLL\HcTestCategoryBLLPartial.cs" />
+    <Compile Include="BLL\HcUserlabtestBLL.cs" />
+    <Compile Include="BLL\HcUserlabtestBLLPartial.cs" />
+    <Compile Include="BLL\HcUsersBLL.cs" />
+    <Compile Include="BLL\HcUsersBLLPartial.cs" />
+    <Compile Include="DAL\AdmMenuDAL.cs" />
+    <Compile Include="DAL\AdmMenuDALPartial.cs" />
+    <Compile Include="DAL\AdmMenusubDAL.cs" />
+    <Compile Include="DAL\AdmMenusubDALPartial.cs" />
+    <Compile Include="DAL\AdmRoledetailsDAL.cs" />
+    <Compile Include="DAL\AdmRoledetailsDALPartial.cs" />
+    <Compile Include="DAL\AdmRolemasterDAL.cs" />
+    <Compile Include="DAL\AdmRolemasterDALPartial.cs" />
+    <Compile Include="DAL\HcAboutDAL.cs" />
+    <Compile Include="DAL\HcAboutDALPartial.cs" />
+    <Compile Include="DAL\HcAssesmentDAL.cs" />
+    <Compile Include="DAL\HcAssesmentDALPartial.cs" />
+    <Compile Include="DAL\HcBlogDAL.cs" />
+    <Compile Include="DAL\HcBlogDALPartial.cs" />
+    <Compile Include="DAL\HcCommunicationchannelDAL.cs" />
+    <Compile Include="DAL\HcCommunicationchannelDALPartial.cs" />
+    <Compile Include="DAL\HcCountryDAL.cs" />
+    <Compile Include="DAL\HcCountryDALPartial.cs" />
+    <Compile Include="DAL\HcDiseasesDAL.cs" />
+    <Compile Include="DAL\HcDiseasesDALPartial.cs" />
+    <Compile Include="DAL\HcDoctorAppointmentDAL.cs" />
+    <Compile Include="DAL\HcDoctorAppointmentDALPartial.cs" />
+    <Compile Include="DAL\HcDoctorassesmentDAL.cs" />
+    <Compile Include="DAL\HcDoctorassesmentDALPartial.cs" />
+    <Compile Include="DAL\HcDoctorDepartmentsDAL.cs" />
+    <Compile Include="DAL\HcDoctorDepartmentsDALPartial.cs" />
+    <Compile Include="DAL\HcDoctorinfoDAL.cs" />
+    <Compile Include="DAL\HcDoctorinfoDALPartial.cs" />
+    <Compile Include="DAL\HcDoctorTimesDAL.cs" />
+    <Compile Include="DAL\HcDoctorTimesDALPartial.cs" />
+    <Compile Include="DAL\HcEmergencycontactDAL.cs" />
+    <Compile Include="DAL\HcEmergencycontactDALPartial.cs" />
+    <Compile Include="DAL\HcGuidedetailsDAL.cs" />
+    <Compile Include="DAL\HcGuidedetailsDALPartial.cs" />
+    <Compile Include="DAL\HcGuidemasterDAL.cs" />
+    <Compile Include="DAL\HcGuidemasterDALPartial.cs" />
+    <Compile Include="DAL\HcLabTestDAL.cs" />
+    <Compile Include="DAL\HcLabTestDALPartial.cs" />
+    <Compile Include="DAL\HcMedicahistoryDAL.cs" />
+    <Compile Include="DAL\HcMedicahistoryDALPartial.cs" />
+    <Compile Include="DAL\HcMedicineDAL.cs" />
+    <Compile Include="DAL\HcMedicineDALPartial.cs" />
+    <Compile Include="DAL\HcMedicinetypeDAL.cs" />
+    <Compile Include="DAL\HcMedicinetypeDALPartial.cs" />
+    <Compile Include="DAL\HcOffersDAL.cs" />
+    <Compile Include="DAL\HcOffersDALPartial.cs" />
+    <Compile Include="DAL\HcOrganizationDAL.cs" />
+    <Compile Include="DAL\HcOrganizationDALPartial.cs" />
+    <Compile Include="DAL\HcPackagedetailsDAL.cs" />
+    <Compile Include="DAL\HcPackagedetailsDALPartial.cs" />
+    <Compile Include="DAL\HcPackagemasterDAL.cs" />
+    <Compile Include="DAL\HcPackagemasterDALPartial.cs" />
+    <Compile Include="DAL\HcPaymentinfoDAL.cs" />
+    <Compile Include="DAL\HcPaymentinfoDALPartial.cs" />
+    <Compile Include="DAL\HcProductcartDAL.cs" />
+    <Compile Include="DAL\HcProductcartDALPartial.cs" />
+    <Compile Include="DAL\HcProductcategoryDAL.cs" />
+    <Compile Include="DAL\HcProductcategoryDALPartial.cs" />
+    <Compile Include="DAL\HcProductorderDAL.cs" />
+    <Compile Include="DAL\HcProductorderDALPartial.cs" />
+    <Compile Include="DAL\HcServicecenterDAL.cs" />
+    <Compile Include="DAL\HcServicecenterDALPartial.cs" />
+    <Compile Include="DAL\HcServicesDAL.cs" />
+    <Compile Include="DAL\HcServicesDALPartial.cs" />
+    <Compile Include="DAL\HcTestCategoryDAL.cs" />
+    <Compile Include="DAL\HcTestCategoryDALPartial.cs" />
+    <Compile Include="DAL\HcUserlabtestDAL.cs" />
+    <Compile Include="DAL\HcUserlabtestDALPartial.cs" />
+    <Compile Include="DAL\HcUsersDAL.cs" />
+    <Compile Include="DAL\HcUsersDALPartial.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HCare.Models\HCare.Models.csproj">
+      <Project>{240E7502-51CE-4278-BADA-7415A6CBA8FE}</Project>
+      <Name>HCare.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

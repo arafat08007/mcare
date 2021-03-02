@@ -1,0 +1,84 @@
+﻿@{
+    ViewBag.Title = "Lab Test";
+    ViewBag.ActiveLab = "active";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+@model HealthCareApplication.Models.SiteInfo
+@{Html.RenderPartial("_MyPartial");}
+
+
+<div class="container-fluid">
+    <br />
+               <div class="row">
+                   <div class="col-md-3 col-lg-3">
+                        <div class="search-filter">
+                <h4 class="mt-15 mb-10"> Search for lab-test</h4>               
+                <form method="post">
+                    <div class="form-group has-success has-feedback">                        
+                        <div class="col">
+                            <input type="text" id="labsearch" class="form-control" name="labsearch" placeholder="Search by lab test name">
+                            <i class="glyphicon glyphicon-search form-control-feedback"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label> Lab test category</label>
+                        @Html.DropDownListFor(x => x.Testcategory, (List<SelectListItem>)ViewBag.AllTestCategory, new { @class = "form-control" , @id="Testcategory" })
+
+                    </div>               
+         
+                    <button type="submit" class="btn btn-success btn-block">Search</button>
+                </form>
+            </div>
+
+                   </div>
+                 <div class="col-md-6 col-lg-5" >
+                    <h2 class="mt-5 mb-15">ALL TEST</h2>
+                    <div class="row">
+                           @Html.Raw(ViewBag.AllLabTest)
+                       
+                    </div>
+                 </div>
+                 <div class="col-md-4" style="border-left:1px solid green;">
+                     <h2 class=" mb-15 mt-5">Lab Test Summury</h2>
+                      <div class="lab-cart">
+                       <form action="">
+                         <div class="form-group row">
+                             <label class="col-sm-6 col-form-label">Sample Collection Date</label>
+                             <div class="col-sm-6">
+                               <input type="date" class="form-control" >
+                             </div>
+                           </div>
+                         <div class="form-group row">
+                             <label class="col-sm-6 col-form-label">Sample Collection Time</label>
+                             <div class="col-sm-6">
+                               <input type="time" class="form-control" >
+                             </div>
+                           </div>
+
+                           <table class="table table-responsive">
+                              <thead>
+                                 <td> Lab Test Name</td>
+                                
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td>COVID-19</td>
+                                 </tr>
+                                 <tr>
+                                    <td>COVID-19</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <a href="#" class="btn btn-primary "> ADD TO CART</a>
+                       </form>
+                    </div>
+                 </div>
+               </div>
+            </div>
+         
+<script type="text/javascript">
+
+    function addtocart( id) {
+        alert(id);
+    }
+</script>

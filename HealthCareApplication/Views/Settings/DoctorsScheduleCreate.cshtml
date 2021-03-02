@@ -1,0 +1,82 @@
+﻿@{
+    ViewBag.Title = "DoctorsScheduleCreate";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@model HCare.Models.HcDoctorTimesEntity
+
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "InputForm" }))
+{
+    @Html.HiddenFor(m => m.Id)
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-3 text-right control-label col-form-label">Doctor Name <span class="text-danger"> *</span></label>
+                        <div class="col-sm-9">
+                            @Html.DropDownListFor(m => m.Doctorid, (List<SelectListItem>)ViewBag.ListDoctor, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-3 text-right control-label col-form-label">Days <span class="text-danger"> *</span></label>
+                        <div class="col-sm-9">
+                            @Html.DropDownListFor(m => m.Days, (List<SelectListItem>)ViewBag.ListDays, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-3 text-right control-label col-form-label">Times <span class="text-danger"> *</span></label>
+                        <div class="col-sm-9">
+                            @Html.TextBoxFor(m => m.Times, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top">
+                    <div class="card-body float-right">
+                        <button type="button" class="btn btn-primary" onclick="SubmitResult()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            @*<div class="card">
+                <div class="card-body">
+                    <label>Photo</label>
+                    <div class="form-group row">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="FilePath" onchange="checkFileSize(this)" />
+                            <label class="custom-file-label" for="FilePath">Choose file...</label>
+                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                        </div>
+                    </div>
+                    <div class="row" style="">
+                        <img alt="" id="ViewFilePath" src="@ViewBag.FilePath" style="margin-top:7px;overflow:hidden;width:150px; height:auto;" onclick = 'window.open(this.src)' />
+                    </div>
+                </div>
+            </div>*@
+        </div>
+    </div>    
+}
+
+<script type="text/javascript">
+    function SubmitResult() {
+        var error = "";
+        if (!$('#Doctorid').val()) error = "Sorry, Doctor Name is empty";
+        else if (!$('#Days').val()) error = "Sorry, Day is empty";
+        else if (!$('#Times').val()) error = "Sorry, Time is empty";
+        if (error) {
+            toastr.warning(error, 'Warning!');
+            return false;
+        }
+
+        if (confirm("Are you sure to Submit this?")) {
+            $.post('/Settings/DoctorsScheduleSaveUpdate', $("#InputForm").serialize(), function (data) {
+                if (data.Success) {
+                    toastr.success(data.Message, 'Success!');
+                    window.open('/Settings/DoctorsScheduleList/' + data.Id, '_self');
+                }
+                else toastr.error(data.Message, 'Error!');
+            });
+        }
+    }
+</script>

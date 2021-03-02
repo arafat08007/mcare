@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "DoctorsDepartmentCreate";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@model HCare.Models.HcDoctorDepartmentsEntity
+
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "InputForm" }))
+{
+    @Html.HiddenFor(m => m.Id)
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group row">
+                        <label class="col-sm-3 text-right control-label col-form-label">Name <span class="text-danger"> *</span></label>
+                        <div class="col-sm-9">
+                            @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 text-right control-label col-form-label">About</label>
+                        <div class="col-sm-9">
+                            @Html.TextAreaFor(m => m.About, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top">
+                    <div class="card-body float-right">
+                        <button type="button" class="btn btn-primary" onclick="SubmitResult()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+}
+
+<script type="text/javascript">
+    function SubmitResult() {
+        var error = "";
+        if (!$('#Name').val()) error = "Sorry, Name is empty";
+        if (error) {
+            toastr.warning(error, 'Warning!');
+            return false;
+        }
+
+        if (confirm("Are you sure to Submit this?")) {
+            $.post('/Settings/DoctorsDepartmentSaveUpdate', $("#InputForm").serialize(), function (data) {
+                if (data.Success) {
+                    toastr.success(data.Message, 'Success!');
+                    $('#Id').val(data.Id);
+                    window.open('/Settings/DoctorsDepartmentList', '_self');
+                }
+                else toastr.error(data.Message, 'Error!');
+            });
+        }
+
+    }
+</script>

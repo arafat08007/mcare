@@ -1,0 +1,32 @@
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HCare.Models\bin\Debug\HCare.Models.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HCare.Models\bin\Debug\HCare.Models.pdb
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HCare.Models\obj\Debug\HCare.Models.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HCare.Models\obj\Debug\HCare.Models.pdb
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HCare.Models\bin\Debug\HCare.Models.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HCare.Models\bin\Debug\HCare.Models.pdb
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HCare.Models\obj\Debug\HCare.Models.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HCare.Models\obj\Debug\HCare.Models.pdb
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HCare.Models\bin\Debug\HCare.Models.dll
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HCare.Models\bin\Debug\HCare.Models.pdb
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HCare.Models\obj\Debug\HCare.Models.csprojResolveAssemblyReference.cache
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HCare.Models\obj\Debug\HCare.Models.dll
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HCare.Models\obj\Debug\HCare.Models.pdb
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HCare.Models\bin\Debug\HCare.Models.dll
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HCare.Models\bin\Debug\HCare.Models.pdb
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HCare.Models\obj\Debug\HCare.Models.dll
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HCare.Models\obj\Debug\HCare.Models.pdb
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HCare.Models\bin\Debug\HCare.Models.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HCare.Models\bin\Debug\HCare.Models.pdb
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HCare.Models\obj\Debug\HCare.Models.csprojAssemblyReference.cache
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HCare.Models\obj\Debug\HCare.Models.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HCare.Models\obj\Debug\HCare.Models.pdb
+F:\ptvl all works\mCare\HCare.Models\bin\Debug\HCare.Models.dll
+F:\ptvl all works\mCare\HCare.Models\bin\Debug\HCare.Models.pdb
+F:\ptvl all works\mCare\HCare.Models\obj\Debug\HCare.Models.dll
+F:\ptvl all works\mCare\HCare.Models\obj\Debug\HCare.Models.pdb
+F:\ptvl all works\mCare\HCare.Models\obj\Debug\HCare.Models.csprojResolveAssemblyReference.cache
+D:\works\mcare\mCare\mCare\HCare.Models\bin\Debug\HCare.Models.dll
+D:\works\mcare\mCare\mCare\HCare.Models\bin\Debug\HCare.Models.pdb
+D:\works\mcare\mCare\mCare\HCare.Models\obj\Debug\HCare.Models.csprojResolveAssemblyReference.cache
+D:\works\mcare\mCare\mCare\HCare.Models\obj\Debug\HCare.Models.dll
+D:\works\mcare\mCare\mCare\HCare.Models\obj\Debug\HCare.Models.pdb

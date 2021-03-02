@@ -1,0 +1,201 @@
+﻿@{
+    ViewBag.Title = "DoctorCreate";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@model HCare.Models.HcDoctorinfoEntity
+
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "InputForm" }))
+{
+    @Html.HiddenFor(m => m.Id)
+    @Html.HiddenFor(m => m.Photo)
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-3 text-right control-label col-form-label">Doctor Name <span class="text-danger"> *</span></label>
+                        <div class="col-sm-9">
+                            @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-3 text-right control-label col-form-label">Department <span class="text-danger"> *</span></label>
+                        <div class="col-sm-9">
+                            @Html.DropDownListFor(m => m.Department, (List<SelectListItem>)ViewBag.DepartmentList, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-3 text-right control-label col-form-label">Specialist <span class="text-danger"> *</span></label>
+                        <div class="col-sm-9">
+                            @Html.TextAreaFor(m => m.Specialist, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-3 text-right control-label col-form-label">Gender</label>
+                        <div class="col-sm-9">
+                        @{
+                            int Count = 1;
+                            foreach (SelectListItem dr in ViewBag.GenderList)
+                            {
+                            <div class="custom-control custom-radio">
+                                @Html.RadioButtonFor(m => m.Gender, @dr.Value, new { @class = "custom-control-input", @id = "Radio" + Count })
+                                <label class="custom-control-label" for="Radio@(Count)">@dr.Text</label>
+                            </div>
+                            Count++;
+                            }
+                        }
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-3 text-right control-label col-form-label">Joindate</label>
+                        <div class="col-sm-9">
+                            @Html.TextBoxFor(m => m.Joindate, new { @class = "form-control mydatepicker", @readonly = true })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-3 text-right control-label col-form-label">Education</label>
+                        <div class="col-sm-9">
+                            @Html.TextAreaFor(m => m.Education, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-3 text-right control-label col-form-label">Experience (Year)</label>
+                        <div class="col-sm-9">
+                            @Html.TextBoxFor(m => m.Experience, new { @class = "form-control", @type = "number" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-3 text-right control-label col-form-label">Fees</label>
+                        <div class="col-sm-9">
+                            @Html.TextBoxFor(m => m.Fees, new { @class = "form-control", @type = "number" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-3 text-right control-label col-form-label">About</label>
+                        <div class="col-sm-9">
+                            @Html.TextAreaFor(m => m.About, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-3 text-right control-label col-form-label">SortOrder</label>
+                        <div class="col-sm-9">
+                            @Html.TextBoxFor(m => m.Sortby, new { @class = "form-control", @type="number" })
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top">
+                    <div class="card-body float-right">
+                        <button type="button" class="btn btn-primary" onclick="SubmitResult()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <label>Photo</label>
+                    <div class="form-group row">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="FilePath" onchange="checkFileSize(this)" />
+                            <label class="custom-file-label" for="FilePath">Choose file...</label>
+                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                        </div>
+                    </div>
+                    <div class="row" style="">
+                        <img alt="" id="ViewFilePath" src="@ViewBag.FilePath" style="margin-top:7px;overflow:hidden;width:150px; height:auto;" onclick = 'window.open(this.src)' />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+}
+
+<script type="text/javascript">
+    function SubmitResult() {
+        var error = "";
+        if (!$('#Name').val()) error = "Sorry, Name is empty";
+        else if (!$('#Department').val()) error = "Sorry, Department is empty";
+        else if (!$('#Specialist').val()) error = "Sorry, Specialist is empty";
+        if (error) {
+            toastr.warning(error, 'Warning!');
+            return false;
+        }
+
+        if (confirm("Are you sure to Submit this?")) {
+            UploadFiles("FilePath");
+        }
+
+    }
+
+    function SaveThis() {
+        $.post('/Settings/DoctorSaveUpdate', $("#InputForm").serialize(), function (data) {
+            if (data.Success) {
+                toastr.success(data.Message, 'Success!');
+                window.open('/Settings/DoctorList', '_self');
+            }
+            else toastr.error(data.Message, 'Error!');
+        });
+    }
+</script>
+
+
+<script type="text/javascript">
+    function UploadFiles(inpId, imgName) {
+        var imgId = $('#Photo');
+        if (!imgName && imgId.val()) imgName = imgId.val().split('/')[3];
+
+        var files = $('#' + inpId).prop("files");
+        if (files.length > 0) {
+            var formData = new FormData();
+            formData.append('file1', files[0]);
+            formData.append('name1', imgName);
+
+            var _url = '@Url.Action("UploadFiles", "Base", new { Folder = "11" })';
+
+            $.ajax({
+                url: _url,
+                type: 'POST',
+                data: formData,
+                processData: false,  // tell jQuery not to process the data
+                contentType: false,  // tell jQuery not to set contentType
+                success: function (res) {
+                    if (res.Success) {
+                        imgId.val(res.Path);
+                        SaveThis();
+                    }
+                    else toastr.error(res.Message, 'Error!');
+                }
+            });
+        }
+        else SaveThis();
+    }
+
+    function checkFileSize(_this, _aSize = 3150000, _fExt = ["jpg", "png"]){ 
+        var fPath = $("#Photo").val();
+        $(".invalid-feedback").text("").hide();
+        if (_this.files && _this.files[0]) {
+            if ($.inArray($(_this).val().split(".").pop().toLowerCase(), _fExt) == -1) {
+                $(".invalid-feedback").text("Allowed formats : "+_fExt.join(", ")).show();
+                $(_this).val("");
+            }
+//            else if (_this.files[0].size > _aSize) {
+//                var _eSize = _this.files[0].size,
+//                    fSExt = new Array("Bytes", "KB", "MB", "GB"),
+//                    i = 0, j = 0; while(_eSize>900){_eSize/=1024;i++;} while(_aSize>900){_aSize/=1024;j++;}
+//                var exactSize = (Math.round(_eSize*100)/100)+" "+fSExt[i],
+//                    alowedSize = (Math.round(_aSize*100)/100)+" "+fSExt[j];
+//                UIkit.modal.alert("The file is "+ exactSize +"! Maximum file size should "+ alowedSize +".");
+//                $(_this).val("");
+//            }
+            else {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#View' + $(_this).attr('id')).attr('src', e.target.result);
+                }
+                reader.readAsDataURL(_this.files[0]);
+            }
+        }
+        else $('#View' + $(_this).attr('id')).attr('src', fPath); 
+    }
+</script>

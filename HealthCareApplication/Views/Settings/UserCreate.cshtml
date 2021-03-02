@@ -1,0 +1,152 @@
+﻿@{
+    ViewBag.Title = "UserCreate";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@model HCare.Models.HcUsersEntity
+
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "InputForm" }))
+{
+    @Html.HiddenFor(m => m.Id)
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group row">
+                        <label class="col-sm-4 text-right control-label col-form-label">First Name <span class="text-danger"> *</span></label>
+                        <div class="col-sm-8">
+                            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 text-right control-label col-form-label">Last Name</label>
+                        <div class="col-sm-8">
+                            @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 text-right control-label col-form-label">Email Address</label>
+                        <div class="col-sm-8">
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 text-right control-label col-form-label">Mobile Number (User ID) <span class="text-danger"> *</span></label>
+                        <div class="col-sm-8">
+                            @Html.TextBoxFor(m => m.Logname, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 text-right control-label col-form-label">Password <span class="text-danger"> *</span></label>
+                        <div class="col-sm-8">
+                            @Html.TextBoxFor(m => m.Logpass, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 text-right control-label col-form-label">DOB (SecurePass) <span class="text-danger"> *</span></label>
+                        <div class="col-sm-8">
+                            @Html.TextBoxFor(m => m.SecurPass, new { @class = "form-control mydatepicker", @readonly = true })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 text-right control-label col-form-label">Gender</label>
+                        <div class="col-sm-8">
+                        @{
+                            int Count = 1;
+                            foreach (SelectListItem dr in ViewBag.GenderList)
+                            {
+                            <div class="custom-control custom-radio">
+                                @Html.RadioButtonFor(m => m.Gender, @dr.Value, new { @class = "custom-control-input", @id = "Radio" + Count })
+                                <label class="custom-control-label" for="Radio@(Count)">@dr.Text</label>
+                            </div>
+                            Count++;
+                            }
+                        }
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 text-right control-label col-form-label">Address</label>
+                        <div class="col-sm-8">
+                            @Html.TextAreaFor(m => m.Address, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 text-right control-label col-form-label">User Type</label>
+                        <div class="col-sm-8">
+                            @Html.DropDownListFor(m => m.Usertype, (List<SelectListItem>)ViewBag.UserTypeList, new { @class = "form-control", @onchange = "SelectTypeUser()" })
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top">
+                    <div class="card-body float-right">
+                        <button type="button" class="btn btn-primary" onclick="SubmitResult()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <label>User Role</label>
+                    <div class="form-group row">
+                        @Html.DropDownListFor(m => m.Roleid, (List<SelectListItem>)ViewBag.ListUserRole, new { @class = "form-control" })
+                    </div>
+                    <label>Type Users</label>
+                    <div class="form-group row">
+                        @Html.DropDownListFor(m => m.Userid, (List<SelectListItem>)ViewBag.UserTypeList, new { @class = "form-control", @onchange = "SelectedUserInfo()" })
+                        <input type="hidden" value="@Model.Userid" id="SelUserid" />
+                    </div>
+                    <div class="row" style="">
+                        <img alt="" id="ViewFilePath" src="@ViewBag.FilePath" style="margin-top:7px;overflow:hidden;width:150px; height:auto;" onclick = 'window.open(this.src)' />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+}
+
+<script type="text/javascript">
+    SelectTypeUser();
+    function SelectTypeUser() {
+        var ut = $('#Usertype option:selected').val(),
+            sel = $('#SelUserid').val();
+        $('#ViewFilePath').attr('src', "/Docx/NoImage.jpg");
+        $.post('/Settings/SelectTypeUser?ut=' + ut + '&sel=' + sel, function (data) {
+            $('#Userid').html(data);
+        });
+    }
+
+    function SelectedUserInfo() {
+        var ut = $('#Usertype option:selected').val(),
+            uid = $('#Userid option:selected').val();
+        $.post('/Settings/SelectedUserInfo?ut=' + ut + '&uid=' + uid, function (data) {
+            $('#ViewFilePath').attr('src', data.Img);
+            $('#FirstName').val(data.Name);
+            $('input:radio[name=Gender]').filter('[value='+data.Gender+']').prop('checked', true);
+        });
+    }
+
+    function SubmitResult() {
+        var error = "";
+        if (!$('#FirstName').val()) error = "Sorry, First Name is empty";
+        else if (!$('#Logname').val()) error = "Sorry, UserID is empty";
+        else if (!$('#Logpass').val()) error = "Sorry, Password is empty";
+        else if (!$('#SecurPass').val()) error = "Sorry, Date of Birth is empty";
+        if (error) {
+            toastr.warning(error, 'Warning!');
+            return false;
+        }
+
+        if (confirm("Are you sure to Submit this?")) {
+            $.post('/Settings/UserSaveUpdate', $("#InputForm").serialize(), function (data) {
+                if (data.Success) {
+                    toastr.success(data.Message, 'Success!');
+                    $('#Id').val(data.Id);
+                    //window.open('/Settings/UserList', '_self');
+                }
+                else toastr.error(data.Message, 'Error!');
+            });
+        }
+
+    }
+</script>

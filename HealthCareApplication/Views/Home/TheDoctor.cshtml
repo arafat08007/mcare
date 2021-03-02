@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "The Doctor";
+    ViewBag.ActiveCons = "active";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+@model HealthCareApplication.Models.SiteInfo
+@{Html.RenderPartial("_MyPartial");}
+
+
+<div class="container-fluid">
+    <div class="row custom-row">
+        <br />
+        <div class="col-md-1 col-lg-1 "> </div>
+        <div class="col-md-6 col-lg-6 ">
+            @Html.Raw(ViewBag.DoctorData)
+
+        </div>
+        <div class="col-md-4 col-lg-4 ">
+            <h3>Available Time</h3>
+            @Html.Raw(ViewBag.DoctorTime)
+     
+            <a href="/WebAccount/NewAppointment" class="btn btn-lg btn-danger  btn-block">Get appoinment</a>
+            <div class="btn-group btn-block">
+                   
+                <a class="btn  btn-outline-success" href="callto:+8801713060063" style="width:50%;"> <i class="fa fa-phone"> CALL US </i></a>
+                <a class="btn  btn-outline-success" href="mailto:info@abc.com" style="width:50%;"><i class="fa fa-envelope-o"> EMAIL US </i></a>
+                    
+            </div>
+
+        </div>
+
+
+            <div class="col-md-1 col-lg-1"></div>
+
+        </div>
+    </div>
+          

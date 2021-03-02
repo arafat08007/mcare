@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "Consultants";
+    ViewBag.ActiveCons = "active";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+
+@model HealthCareApplication.Models.SiteInfo
+
+
+
+@{Html.RenderPartial("_MyPartial");}
+
+
+<div class="container-fluid">
+    <div class="row">
+        <br />
+
+        <div class="col-md-3">
+            <div class="search-filter">
+                <h4 class="mt-15 mb-10"> SEARCH DOCTOR</h4>
+                <p><small>Search by doctor name, specialist, education, location, languge or anything you want.</small></p>
+                <form method="post">
+                    <div class="form-group has-success has-feedback">                        
+                        <div class="col">
+                            <input type="text" id="searchtrm" class="form-control" name="searchtrm" placeholder="Search anything within us">
+                            <i class="glyphicon glyphicon-search form-control-feedback"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label> Select Specialist</label>
+                        @Html.DropDownListFor(x => x.Specialist, (List<SelectListItem>)ViewBag.getSpecialistData, new { @class = "form-control" , @id="Specialist" })
+
+                    </div>
+                    <h4>Country</h4>
+                    <div class="form-group">
+
+                        @*@Html.DropDownListFor(x => x.Countryname, ViewBag.getCountryData as SelectListItem, new { @class = "form-control" })*@
+
+                        @Html.DropDownListFor(x => x.Countryname, (List<SelectListItem>)ViewBag.getCountryData, new { @class = "form-control" , @id="Countryname" })
+
+
+                    </div>
+                    <h4>Location</h4>
+                    <div class="form-group">
+                        @Html.DropDownListFor(x => x.Location, (List<SelectListItem>)ViewBag.getLocation, new { @class = "form-control"  , @id="Location" })
+                       
+                    </div>
+                    <h4 class="text-center">FILTER BY</h4>
+                    <div class="form-group">
+                        <input type="checkbox" id="nearby" class="form-control-check">
+                        <label for="">Near By</label>
+                    </div>
+                    <h4>Gender</h4>
+                    <div class="form-group d-flex">
+                        <div style="display:inline-flexbox" id="genderRadioGroup">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="genderM" value="Male" name="genderM" class="custom-control-input">
+                                <label class="custom-control-label">Male</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="genderF" value="Male" name="genderF" class="custom-control-input">
+                                <label class="custom-control-label">Female</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Experience</h4>
+                    <div class="form-group">
+                        <input type="text" id="expfeild" class="form-control" name="expfeild" value="" placeholder="Enter year of experience">
+                    </div>
+
+                    <button type="submit" class="btn btn-success btn-block">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-9 pt-40">
+
+
+            @*<h2 class="text-center p-15">ALL DOCTOR'S LIST</h2>*@
+            <div class="row d-flex justify-content-center">
+
+                @Html.Raw(ViewBag.DoctorData)
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+

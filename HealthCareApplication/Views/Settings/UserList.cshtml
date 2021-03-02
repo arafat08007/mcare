@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "UserList";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+
+                @Html.Raw(ViewBag.TableData)
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        function CreateDetails() {
+            window.open('/Settings/UserCreate', '_self');
+        }
+
+        function EditDetails(id) {
+            var form = $('<form action="/Settings/UserCreate" method="post" target="_self">' +
+            '<input type="text" name="Id" value="' + id + '" />' +
+            '</form>');
+            $('body').append(form);
+            form.submit();
+        }
+
+        function DeleteDetails(Id, _this) {
+            var active = $(_this).closest('tr').find('.IsActive');
+            if (active.text() == "Inactive")
+                toastr.info('Sorry, this is already Inactive.', 'Info');
+            else if (confirm("Are you sure to Inactive this?")) {
+                $.post('/Settings/UserDeleteById?Id=' + Id, function (data) {
+                    if (data.Success) active.text('Inactive');
+                    else toastr.error(data.Message, 'Error!');
+                });
+            }
+        }
+    </script>

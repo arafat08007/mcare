@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "MyBoard";
+    ViewBag.ActiveMy = "active";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+@model HealthCareApplication.Models.SiteInfo
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mt-30 mb-20">
+          @Html.Raw(ViewBag.SiteMyMenuList)
+        </div>
+        <div class="col-md-8 mt-30 mb-20">
+            @*Content Area Start*@
+
+                  <div class="form-group row">
+                      <div class="col-sm-4">
+                        <div class="dashboard-card bg-success text-white text-center p-10">
+                          <h1>1</h1>
+                          <h4>Upcoming Appointment</h4>
+                        </div>
+                       </div>
+                        <div class="col-sm-4">
+                        <div class="dashboard-card bg-success text-white text-center p-10">
+                          <h1>2</h1>
+                          <h4>Completed Appointment</h4>
+                        </div>
+                       </div>
+                        <div class="col-sm-4">
+                        <div class="dashboard-card bg-success text-white text-center p-10">
+                          <h1>1</h1>
+                          <h4>Cancelled Appointment</h4>
+                        </div>
+                       </div>
+                       
+                </div>
+
+                  <div class="form-group row mt-30">
+                       <div class="col-sm-4">
+                        <div class="dashboard-card bg-success text-white text-center p-10">
+                          <h1>120</h1>
+                          <h4>Wallet Balance</h4>
+                        </div>
+                       </div>
+                </div>
+          
+                  
+            @*Content Area End*@
+        </div>
+    </div>
+</div>

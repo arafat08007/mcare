@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Department";
+    ViewBag.ActiveCons = "active";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+@model HealthCareApplication.Models.SiteInfo
+@{Html.RenderPartial("_MyPartial");}
+
+
+<div class="container-fluid">
+    
+    <div class="row custom-row">
+        <br />
+        <div class="col-md-1 col-lg-1 "> </div>
+            <div class="col-md-5 col-lg-5  custom-scroll " >
+                <div class="row d-flex">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="card d-flex">
+                            <p> <small>CONSULT CITY'S TOP DOCTORS</small> </p> 
+                             <p>THE <strong>MINUTE</strong> YOU NEED TO</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div class="card d-flex">
+                            <p> <small>FIRST CONSULTATION STARTING</small></p>
+                            <p>Now: 249 <s>499</s></p>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row d-flex card">
+                    <div class="col-md-4 col-lg-4 text-center" > 
+                        <p><strong>409</strong></p>
+                        <p> Dermatologists</p>
+                    </div>
+                    <div class="col-md-4 col-lg-4 text-center" style="border-right:1px solid #009f12; border-left:1px solid #009f12;">
+                        <p><strong>480578</strong></p>
+                        <p>
+                            Cases done by
+                            Dermatologists
+                        </p> 
+                    </div>
+                    <div class="col-md-4 col-lg-4 text-center" >
+                        <p><strong>289+</strong></p>
+                        <p> Hospitals</p>
+                    </div>
+
+                </div>
+                <h4>
+                    Other Specialities
+                </h4>
+                <div class="owl-carousel-3col">
+                    @Html.Raw(ViewBag.DepartmentTab)
+                </div>
+                @Html.Raw(ViewBag.DepartmentDetails)
+            </div>
+            <div class="col-md-6 col-lg-6  custom-scroll">
+                <br />
+                <h4>Counsultant</h4>
+                @Html.Raw(ViewBag.DoctorList)
+
+            </div>
+          
+
+        </div>
+    </div>
+          

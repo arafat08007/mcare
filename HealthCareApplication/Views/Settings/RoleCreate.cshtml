@@ -1,0 +1,132 @@
+﻿@{
+    ViewBag.Title = "RoleCreate";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@model HCare.Models.AdmRolemasterEntity
+
+<style type="text/css">.table td, .table th{padding:8px !important;}</style>
+
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "InputForm" }))
+{
+    @Html.HiddenFor(m => m.Id)
+    @Html.HiddenFor(m => m.JsonDetails)
+    @Html.HiddenFor(m => m.AllDashboard)
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group row">
+                        <label class="col-sm-3 text-right control-label col-form-label">Role Name <span class="text-danger"> *</span></label>
+                        <div class="col-sm-9">
+                            @Html.TextBoxFor(m => m.Rolename, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 text-right control-label col-form-label">Role Description</label>
+                        <div class="col-sm-9">
+                            @Html.TextAreaFor(m => m.Roledescription, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 text-right control-label col-form-label">Default Dashboard</label>
+                        <div class="col-md-9">
+                        @{
+                            int Count = 1;
+                            foreach (HealthCareApplication.Models.SiteInfo dr in ViewBag.DashboardList)
+                            {
+                            <div class="custom-control custom-radio">
+                                @Html.RadioButtonFor(m => m.DefaultBoard, @dr.MenuId, new { @class = "custom-control-input", @id = "DefaultBoard" + Count })
+                                <label class="custom-control-label" for="DefaultBoard@(Count)">@dr.MenuName</label>
+                            </div>
+                            Count++;
+                            }
+                        }
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 text-right control-label col-form-label">Other Dashboard</label>
+                        <div class="col-md-9">
+                        @{
+                            foreach (HealthCareApplication.Models.SiteInfo dr in ViewBag.DashboardList)
+                            {
+                            <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input allChk" id="allChk@(dr.MenuId)" value="@dr.MenuId">
+                                <label class="custom-control-label" for="allChk@(dr.MenuId)">@dr.MenuName</label>
+                            </div>
+                            }
+                        }
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Feature Permissions</h4>
+                        @Html.Raw(ViewBag.TableData)
+                    </div>
+                </div>
+                <div class="border-top">
+                    <div class="card-body float-right">
+                        <button type="button" class="btn btn-primary" onclick="SubmitResult()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<script type="text/javascript">
+    AllDashboardChk();
+    function AllDashboardChk() {
+        var array = $('#AllDashboard').val().split(",");
+        $.each(array, function (i) {
+            if (array[i])
+                $('#allChk' + array[i]).prop( "checked", true );
+        });
+    }
+
+    function SelectAll(_this) {
+        var aChk = $(_this).is(':checked');
+        $(_this).closest('tr').find('.allSel').each(function () {
+            if (aChk && !$(this).is(':checked')) $(this).trigger("click");
+            else if (!aChk && $(this).is(':checked')) $(this).trigger("click");
+        });
+    }
+
+    function SubmitResult() {
+        var errMsg = "";
+        if (!$('#Rolename').val()) errMsg = "Sorry, Role Name is empty";
+
+        if (errMsg) {
+            toastr.warning(errMsg, 'Warning!');
+            return false;
+        }
+
+        var objDetails = [], obj;
+        $('.allInput').each(function () {
+            var cID = $(this).attr('id').match(/\d+/);
+            obj = {};
+            obj["Id"] = $(this).data('detlid');
+            obj["Featureid"] = $(this).val();
+            obj["Isview"] = $('#view' + cID).is(':checked') ? "checked" : "";
+            obj["Isadd"] = $('#add' + cID).is(':checked') ? "checked" : "";
+            obj["Isedit"] = $('#edit' + cID).is(':checked') ? "checked" : "";
+            obj["Isdelete"] = $('#delete' + cID).is(':checked') ? "checked" : "";
+            objDetails.push(obj);
+        });
+
+        if (objDetails.length == 0) { toastr.warning("Sorry, Role Details is empty", 'Warning!'); }
+        else if (confirm('Are you sure to Submit this?')) {
+            $('#JsonDetails').val(JSON.stringify(objDetails));
+            $('#AllDashboard').val($(".allChk:checked").map(function () { return this.value; }).get().join());
+            $.post('/Settings/RoleSaveUpdate', $("#InputForm").serialize(), function (data) {
+                if (data.Success) {
+                    toastr.success(data.Message, 'Success!');
+                    $('#Id').val(data.Id);
+                    window.open('/Settings/RoleList', '_self');
+                }
+                else toastr.error(data.Message, 'Error!');
+            });
+        }
+    }
+</script>

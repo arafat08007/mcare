@@ -1,0 +1,200 @@
+/*
+Boxed Skin
+*/
+
+/* Menu items */
+.menuzord-menu > li{
+	padding: 18px 0;
+}
+.menuzord-menu > li > a{
+	padding: 8px 16px;
+}
+
+/* Active/hover state (menu items) */
+.menuzord-menu > li.active > a,
+.menuzord-menu > li:hover > a{
+	background:none;
+	color: green;
+}
+.custome-card {
+	margin: 1em;
+	padding: 1em;
+	-webkit-box-shadow: 0 4px 13px #ccc ;
+	-moz-box-shadow: 0 4px 13px #ccc;
+	box-shadow: 0 4px 13px #ccc;
+}
+doctor-card {
+    	padding: 0.8em;
+	-webkit-box-shadow: 0 4px 13px #ccc ;
+	-moz-box-shadow: 0 4px 13px #ccc;
+	box-shadow: 0 4px 13px #ccc;
+}
+.ad-cards {
+	margin: 1em;
+	padding: 1em;
+	background:#fafafa;
+	display: block !important;
+	-webkit-box-shadow: 0 4px 13px #ccc;
+	-moz-box-shadow: 0 4px 13px #ccc;
+	box-shadow: 0 4px 13px #ccc;
+	border-radius:5px;
+}
+.custom-scroll::-webkit-scrollbar {
+	display: none;
+}
+.custom-scroll {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+.custom-list {
+	height:90vh;
+}
+
+.effect3 {
+	position: relative;
+}
+
+	.effect3:before {
+		z-index: -1;
+		position: absolute;
+		content: "";
+		bottom: 15px;
+		left: 10px;
+		width: 50%;
+		top: 80%;
+		max-width: 300px;
+		background: #777;
+		-webkit-box-shadow: 0 15px 10px #777;
+		-moz-box-shadow: 0 15px 10px #777;
+		box-shadow: 0 15px 10px #777;
+		-webkit-transform: rotate(-3deg);
+		-moz-transform: rotate(-3deg);
+		-o-transform: rotate(-3deg);
+		-ms-transform: rotate(-3deg);
+		transform: rotate(-3deg);
+	}
+
+/* Dropdown */
+.menuzord-menu ul.dropdown {
+	top: 71px;
+}
+.menuzord-menu ul.dropdown li ul.dropdown{
+    top: 0;
+}
+.btn-outline-success {
+	border: 1px solid #399C39;
+}
+
+/* Dropdown items */
+.menuzord .menuzord-menu ul.dropdown li:hover > a{
+	background: #333;
+	color: #fff;
+}
+
+/* Megamenu */
+.menuzord-menu > li > .megamenu{
+	top: 71px;
+}
+.card-img {
+	width:100px;
+	height: 100px;
+}
+/* Search Field */
+.menuzord-menu > li.search form {
+	padding: 2px 16px;
+}
+
+/* Color schemes */
+/* blue */
+.menuzord.blue .menuzord-menu > li.active > a, 
+.menuzord.blue .menuzord-menu > li:hover > a, 
+.menuzord.blue .menuzord-menu ul.dropdown li:hover > a{ 
+	background:none; 
+	color: green;
+}
+
+
+/* Mobile mode (Responsive mode) */
+@media (max-width: 900px){
+	/* Menu items */
+	.menuzord-responsive .menuzord-menu > li{
+		padding: 0;
+	}
+	.menuzord-responsive .menuzord-menu > li > a{
+		padding: 12px 20px !important;
+	}
+}
+
+.service-icon{
+	background: white;
+    padding: 21px;
+    border-radius: 100%;
+    box-shadow: 2px 1px 14px 0px #0000002b;
+    border: 1px solid #ccc;
+}
+.bc {
+    background: #555555;
+}
+
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
+}
+.doctor-price {
+    color: #178abd;
+    font-size: 29px;
+}
+span.rating {
+    font-size: 22px;
+    padding: 10px;
+    color: orange;
+}
+.card-doctor {
+    box-shadow: 4px 7px 10px 0px #0000001c;
+    border-radius: 5px;
+    min-height: 200px;
+    
+}
+.py-10{
+	padding: 0px 10px
+}
+.px-10{
+	padding: 10px 0px
+}
+.dd-price{
+	font-size: 33px;
+    color: #1196cc;
+    padding: 0 10px;
+}
+.dd-rating{
+	font-size: 23px;
+    color: orange;
+    padding: 0 10px;
+}
+.dd-fav{
+	
+    font-size: 22px;
+    height: 20px;
+    line-height: 46px;
+    margin: 2px 7px 2px 0;
+    width: 30px;
+}
+.icon-theme-colored.icon-dark a {
+   color: #ff4747b5 !important;
+    background: none !important;
+}
+.font-18{
+	font-size: 18px;
+}
+.font-bold{
+	font-style: bold;
+	font-weight: 800;
+}
+.lab-cart {
+    padding: 10px;
+    box-shadow: 3px 2px 11px #00000012;
+    border-radius: 7px;
+}

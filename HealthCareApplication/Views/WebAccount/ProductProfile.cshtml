@@ -1,0 +1,112 @@
+﻿@{
+    ViewBag.Title = "ProductProfile";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+
+
+<div class="container">
+    <div class="row">
+
+                   <div class="col-md-5">
+                     <div class="product-image">
+                       <ul class="owl-carousel-1col" data-nav="true">
+                       <li data-thumb="@Url.Content("~/Docx/Products/11/img1.jpg")"><a href="@Url.Content("~/Docx/Products/11/img1.jpg")" data-lightbox="single-product"><img src="@Url.Content("~/Docx/Products/11/img1.jpg")" alt=""></a></li>
+                       <li data-thumb="@Url.Content("~/Docx/Products/11/img2.jpg")"><a href="@Url.Content("~/Docx/Products/11/img2.jpg")" data-lightbox="single-product"><img src="@Url.Content("~/Docx/Products/11/img2.jpg")" alt=""></a></li>
+                       <li data-thumb="@Url.Content("~/Docx/Products/11/img3.jpg")"><a href="@Url.Content("~/Docx/Products/11/img3.jpg")" data-lightbox="single-product"><img src="@Url.Content("~/Docx/Products/11/img3.jpg")" alt=""></a></li>
+                     </ul>
+                     </div>
+                   </div>
+                   <div class="col-md-7">
+                     <div class="product-summary">
+                       <h2 class="product-title">Napa</h2>
+                       <div class="product_review">
+                         <ul class="review_text list-inline">
+                           <li>
+                             <div title="Rated 4.50 out of 5" ><p>5 <i class="fa fa-star"></i></p><!-- <span data-width="90%">4.50</span> --></div>
+                           </li>
+                           <li><a href="#"><span>2</span>Reviews</a></li>
+                          
+                         </ul>
+                       </div>
+                       <div class="price"> <del><span class="amount">$40.00</span></del> <ins><span class="amount">$30.00</span></ins> </div>
+                       <div class="short-description">
+                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo omnis, eligendi reprehenderit quidem veniam dolor quod a sed, porro tempore hic similique voluptatibus sequi architecto, expedita dolorum nobis officia laboriosam.</p>
+                       </div>
+                       <div class="tags"><strong>SKU:</strong> EA34</div>
+                       <div class="category"><strong>Category:</strong> <a href="#">Tablet</a>, <a href="#">Shirts</a></div>
+                       <div class="tags"><strong>Manufacturer Name:</strong> <a href="#">ABC</a></div>
+                       <div class="cart-form-wrapper">
+                         <form enctype="multipart/form-data" method="post" class="cart">
+                           <input type="hidden" value="productID" name="add-to-cart">
+                           <table class="table variations no-border">
+                             <tbody>
+                               <tr>
+                                 <td class="name"><h3>Quantity</h3>
+                                  <div class="quantity buttons_added">
+                                     <input type="button" class="minus" value="-">
+                                     <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1" readonly="readonly">
+                                     <input type="button" class="plus" value="+">
+                                   </div></td>
+                                 
+                               </tr>
+                             </tbody>
+                           </table>
+                           <button class="single_add_to_cart_button btn btn-default" type="submit">Add to cart</button>
+                         </form>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="col-md-12">
+                     <div class="horizontal-tab product-tab">
+                       <ul class="nav nav-tabs">
+                         <li class="active"><a href="#tab1" data-toggle="tab">Benefits of Products</a></li>
+                          <li><a href="#tab3" data-toggle="tab">Reviews</a></li>
+                       </ul>
+                       <div class="tab-content">
+                         <div class="tab-pane fade in active" id="tab1">
+                           <h3>Benefits of Products</h3>
+                           <p>One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae. One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.</p>
+                           <p>One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.</p>
+                         </div>
+                       
+                         <div class="tab-pane fade" id="tab3">
+                           <div class="reviews">
+                             <ol class="commentlist">
+                               <li class="comment">
+                                 <div class="media"> <a href="#" class="media-left"><img class="thumb img-circle media-object" alt="" src="https://placehold.it/75x75" width="75"></a>
+                                   <div class="media-body">
+                                     <ul class="review_text list-inline mt-5">
+                                       <li>
+                                         <div title="Rated 5.00 out of 5" class="star-rating"><span  data-width="100%">5.00</span></div>
+                                       </li>
+                                       <li>
+                                         <h5 class="media-heading meta"><span class="author">Tom Joe</span> – Mar 15, 2015:</h5>
+                                       </li>
+                                     </ul>
+                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat purus tempor sem molestie, sed blandit lacus posuere. Lorem ipsum dolor sit amet.</div>
+                                 </div>
+                               </li>
+                               <li class="comment">
+                                 <div class="media"> <a href="#" class="media-left"><img class="thumb img-circle media-object" alt="" src="https://placehold.it/75x75" width="75"></a>
+                                   <div class="media-body">
+                                     <ul class="review_text list-inline mt-5">
+                                       <li>
+                                         <div title="Rated 4.00 out of 5" class="star-rating"><span  data-width="80%">4.00</span></div>
+                                       </li>
+                                       <li>
+                                         <h5 class="media-heading meta"><span class="author">Mark Doe</span> – Jan 23, 2015:</h5>
+                                       </li>
+                                     </ul>
+                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat purus tempor sem molestie, sed blandit lacus posuere. Lorem ipsum dolor sit amet.</div>
+                                 </div>
+                               </li>
+                             </ol>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 
+    </div>
+</div>

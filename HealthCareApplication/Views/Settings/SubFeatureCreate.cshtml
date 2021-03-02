@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "SubFeatureCreate";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@model HCare.Models.AdmMenusubEntity
+
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "InputForm" }))
+{
+    @Html.HiddenFor(m => m.Id)
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-3 text-right control-label col-form-label">Select Feature <span class="text-danger"> *</span></label>
+                        <div class="col-sm-9">
+                            @Html.DropDownListFor(m => m.Menuid, (List<SelectListItem>)ViewBag.MainFeatureList, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-3 text-right control-label col-form-label">Sub-Feature Name <span class="text-danger"> *</span></label>
+                        <div class="col-sm-9">
+                            @Html.TextBoxFor(m => m.Subname, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-3 text-right control-label col-form-label">Sub-Feature Icon <span class="text-danger"> *</span></label>
+                        <div class="col-sm-9">
+                            @Html.TextBoxFor(m => m.Subicon, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-3 text-right control-label col-form-label">Sub-Feature URL <span class="text-danger"> *</span></label>
+                        <div class="col-sm-9">
+                            @Html.TextBoxFor(m => m.Suburl, new { @class = "form-control", @placeholder = "/Controller/Action" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-3 text-right control-label col-form-label">SortOrder</label>
+                        <div class="col-sm-9">
+                            @Html.TextBoxFor(m => m.Sortby, new { @class = "form-control", @type="number" })
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top">
+                    <div class="card-body float-right">
+                        <button type="button" class="btn btn-primary" onclick="SubmitResult()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+}
+
+<script type="text/javascript">
+    function SubmitResult() {
+        var error = "";
+        if (!$('#Subname').val()) error = "Sorry, Sub-Menu Name is empty";
+        else if (!$('#Subicon').val()) error = "Sorry, Sub-Menu Icon is empty";
+        else if (!$('#Suburl').val()) error = "Sorry, Sub-Menu URL is empty";
+        if (error) {
+            toastr.warning(error, 'Warning!');
+            return false;
+        }
+
+        if (confirm("Are you sure to Submit this?")) {
+            $.post('/Settings/SubFeatureSaveUpdate', $("#InputForm").serialize(), function (data) {
+                if (data.Success) {
+                    toastr.success(data.Message, 'Success!');
+                    window.open('/Settings/SubFeatureList/' + data.Id, '_self');
+                }
+                else toastr.error(data.Message, 'Error!');
+            });
+        }
+    }
+</script>

@@ -1,0 +1,140 @@
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HealthCareApplication\bin\HealthCareApplication.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HealthCareApplication\bin\HealthCareApplication.pdb
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HealthCareApplication\bin\EntityFramework.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HealthCareApplication\bin\HCare.Models.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HealthCareApplication\bin\HCare.Structure.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HealthCareApplication\bin\HCare.Server.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HealthCareApplication\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HealthCareApplication\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HealthCareApplication\bin\Microsoft.Practices.ObjectBuilder.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HealthCareApplication\bin\HCare.Models.pdb
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HealthCareApplication\bin\HCare.Structure.pdb
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HealthCareApplication\bin\EntityFramework.xml
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HealthCareApplication\bin\HCare.Server.pdb
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HealthCareApplication\obj\Debug\HCare.Web.csprojResolveAssemblyReference.cache
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HealthCareApplication\obj\Debug\HealthCareApplication.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HealthCareApplication\obj\Debug\HealthCareApplication.pdb
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HealthCareApplication\bin\HealthCareApplication.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HealthCareApplication\bin\HealthCareApplication.pdb
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HealthCareApplication\bin\EntityFramework.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HealthCareApplication\bin\HCare.Models.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HealthCareApplication\bin\HCare.Structure.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HealthCareApplication\bin\HCare.Server.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HealthCareApplication\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HealthCareApplication\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HealthCareApplication\bin\Microsoft.Practices.ObjectBuilder.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HealthCareApplication\bin\HCare.Models.pdb
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HealthCareApplication\bin\HCare.Structure.pdb
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HealthCareApplication\bin\EntityFramework.xml
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HealthCareApplication\bin\HCare.Server.pdb
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HealthCareApplication\obj\Debug\HCare.Web.csprojResolveAssemblyReference.cache
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HealthCareApplication\obj\Debug\HealthCareApplication.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HealthCareApplication\obj\Debug\HealthCareApplication.pdb
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\HealthCareApplication.dll
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\HealthCareApplication.pdb
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\EntityFramework.dll
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\HCare.Models.dll
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\HCare.Structure.dll
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\HCare.Server.dll
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\Microsoft.Practices.ObjectBuilder.dll
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\HCare.Models.pdb
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\HCare.Structure.pdb
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\EntityFramework.xml
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\HCare.Server.pdb
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HealthCareApplication\obj\Debug\HCare.Web.csprojResolveAssemblyReference.cache
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HealthCareApplication\obj\Debug\HealthCareApplication.dll
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HealthCareApplication\obj\Debug\HealthCareApplication.pdb
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\HealthCareApplication.dll
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\HealthCareApplication.pdb
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\EntityFramework.dll
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\HCare.Models.dll
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\HCare.Structure.dll
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\Newtonsoft.Json.dll
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\HCare.Server.dll
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\Microsoft.Practices.ObjectBuilder.dll
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\HCare.Models.pdb
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\HCare.Structure.pdb
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\EntityFramework.xml
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\Newtonsoft.Json.pdb
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\Newtonsoft.Json.xml
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HealthCareApplication\bin\HCare.Server.pdb
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HealthCareApplication\obj\Debug\HCare.Web.csprojResolveAssemblyReference.cache
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HealthCareApplication\obj\Debug\HealthCareApplication.dll
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HealthCareApplication\obj\Debug\HealthCareApplication.pdb
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\obj\Debug\HCare.Web.csprojAssemblyReference.cache
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\HealthCareApplication.dll.config
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\HealthCareApplication.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\HealthCareApplication.pdb
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\EntityFramework.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\HCare.Models.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\HCare.Structure.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\Newtonsoft.Json.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\System.Web.Helpers.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\System.Web.Mvc.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\System.Web.WebPages.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\HCare.Server.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\System.Web.Razor.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\System.Web.WebPages.Razor.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\Microsoft.Web.Infrastructure.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\System.Web.WebPages.Deployment.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\Microsoft.Practices.ObjectBuilder.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\HCare.Models.pdb
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\HCare.Structure.pdb
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\EntityFramework.xml
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\Newtonsoft.Json.pdb
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\Newtonsoft.Json.xml
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\System.Web.Mvc.xml
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\System.Web.WebPages.xml
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\System.Web.Helpers.xml
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\HCare.Server.pdb
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\System.Web.Razor.xml
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\System.Web.WebPages.Razor.xml
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\Microsoft.Web.Infrastructure.xml
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\bin\System.Web.WebPages.Deployment.xml
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\obj\Debug\HCare.Web.csproj.CopyComplete
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\obj\Debug\HealthCareApplication.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HealthCareApplication\obj\Debug\HealthCareApplication.pdb
+F:\ptvl all works\mCare\HealthCareApplication\bin\HealthCareApplication.dll
+F:\ptvl all works\mCare\HealthCareApplication\bin\HealthCareApplication.pdb
+F:\ptvl all works\mCare\HealthCareApplication\bin\EntityFramework.dll
+F:\ptvl all works\mCare\HealthCareApplication\bin\HCare.Models.dll
+F:\ptvl all works\mCare\HealthCareApplication\bin\HCare.Structure.dll
+F:\ptvl all works\mCare\HealthCareApplication\bin\Newtonsoft.Json.dll
+F:\ptvl all works\mCare\HealthCareApplication\bin\HCare.Server.dll
+F:\ptvl all works\mCare\HealthCareApplication\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\ptvl all works\mCare\HealthCareApplication\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\ptvl all works\mCare\HealthCareApplication\bin\Microsoft.Practices.ObjectBuilder.dll
+F:\ptvl all works\mCare\HealthCareApplication\bin\HCare.Models.pdb
+F:\ptvl all works\mCare\HealthCareApplication\bin\HCare.Structure.pdb
+F:\ptvl all works\mCare\HealthCareApplication\bin\EntityFramework.xml
+F:\ptvl all works\mCare\HealthCareApplication\bin\Newtonsoft.Json.pdb
+F:\ptvl all works\mCare\HealthCareApplication\bin\Newtonsoft.Json.xml
+F:\ptvl all works\mCare\HealthCareApplication\bin\HCare.Server.pdb
+F:\ptvl all works\mCare\HealthCareApplication\obj\Debug\HCare.Web.csprojResolveAssemblyReference.cache
+F:\ptvl all works\mCare\HealthCareApplication\obj\Debug\HealthCareApplication.dll
+F:\ptvl all works\mCare\HealthCareApplication\obj\Debug\HealthCareApplication.pdb
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HealthCareApplication.dll
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HealthCareApplication.pdb
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\EntityFramework.dll
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HCare.Models.dll
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HCare.Structure.dll
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\Newtonsoft.Json.dll
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HCare.Server.dll
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\Microsoft.Practices.ObjectBuilder.dll
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HCare.Models.pdb
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HCare.Structure.pdb
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\EntityFramework.xml
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\Newtonsoft.Json.pdb
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\Newtonsoft.Json.xml
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HCare.Server.pdb
+D:\works\mcare\mCare\mCare\HealthCareApplication\obj\Debug\HCare.Web.csprojResolveAssemblyReference.cache
+D:\works\mcare\mCare\mCare\HealthCareApplication\obj\Debug\HealthCareApplication.dll
+D:\works\mcare\mCare\mCare\HealthCareApplication\obj\Debug\HealthCareApplication.pdb

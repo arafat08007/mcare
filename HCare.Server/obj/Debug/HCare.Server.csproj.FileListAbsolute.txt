@@ -1,0 +1,71 @@
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HCare.Server\bin\Debug\HCare.Server.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HCare.Server\bin\Debug\HCare.Server.pdb
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HCare.Server\bin\Debug\HCare.Models.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HCare.Server\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HCare.Server\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HCare.Server\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HCare.Server\bin\Debug\HCare.Models.pdb
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HCare.Server\obj\Debug\HCare.Server.csprojResolveAssemblyReference.cache
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HCare.Server\obj\Debug\HCare.Server.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication\HCare.Server\obj\Debug\HCare.Server.pdb
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HCare.Server\bin\Debug\HCare.Server.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HCare.Server\bin\Debug\HCare.Server.pdb
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HCare.Server\bin\Debug\HCare.Models.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HCare.Server\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HCare.Server\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HCare.Server\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HCare.Server\bin\Debug\HCare.Models.pdb
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HCare.Server\obj\Debug\HCare.Server.csprojResolveAssemblyReference.cache
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HCare.Server\obj\Debug\HCare.Server.dll
+D:\AllOut_Projects\HealthCare\HealthCareApplication_v1\HCare.Server\obj\Debug\HCare.Server.pdb
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HCare.Server\bin\Debug\HCare.Server.dll
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HCare.Server\bin\Debug\HCare.Server.pdb
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HCare.Server\bin\Debug\HCare.Models.dll
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HCare.Server\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HCare.Server\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HCare.Server\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HCare.Server\bin\Debug\HCare.Models.pdb
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HCare.Server\obj\Debug\HCare.Server.csprojResolveAssemblyReference.cache
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HCare.Server\obj\Debug\HCare.Server.dll
+F:\OS_Project\m_prj_healthcare\HealthCareApplication\HCare.Server\obj\Debug\HCare.Server.pdb
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HCare.Server\bin\Debug\HCare.Server.dll
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HCare.Server\bin\Debug\HCare.Server.pdb
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HCare.Server\bin\Debug\HCare.Models.dll
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HCare.Server\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HCare.Server\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HCare.Server\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HCare.Server\bin\Debug\HCare.Models.pdb
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HCare.Server\obj\Debug\HCare.Server.csprojResolveAssemblyReference.cache
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HCare.Server\obj\Debug\HCare.Server.dll
+D:\dotnet\m_prj_healthcare\HealthCareApplication\HCare.Server\obj\Debug\HCare.Server.pdb
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HCare.Server\bin\Debug\HCare.Server.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HCare.Server\bin\Debug\HCare.Server.pdb
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HCare.Server\bin\Debug\HCare.Models.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HCare.Server\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HCare.Server\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HCare.Server\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HCare.Server\bin\Debug\HCare.Models.pdb
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HCare.Server\obj\Debug\HCare.Server.csprojAssemblyReference.cache
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HCare.Server\obj\Debug\HCare.Server.csproj.CopyComplete
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HCare.Server\obj\Debug\HCare.Server.dll
+D:\mCare\m_prj_healthcare-arafat\m_prj_healthcare-arafat\HealthCareApplication\HCare.Server\obj\Debug\HCare.Server.pdb
+F:\ptvl all works\mCare\HCare.Server\bin\Debug\HCare.Server.dll
+F:\ptvl all works\mCare\HCare.Server\bin\Debug\HCare.Server.pdb
+F:\ptvl all works\mCare\HCare.Server\bin\Debug\HCare.Models.dll
+F:\ptvl all works\mCare\HCare.Server\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\ptvl all works\mCare\HCare.Server\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\ptvl all works\mCare\HCare.Server\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\ptvl all works\mCare\HCare.Server\bin\Debug\HCare.Models.pdb
+F:\ptvl all works\mCare\HCare.Server\obj\Debug\HCare.Server.csprojResolveAssemblyReference.cache
+F:\ptvl all works\mCare\HCare.Server\obj\Debug\HCare.Server.dll
+F:\ptvl all works\mCare\HCare.Server\obj\Debug\HCare.Server.pdb
+D:\works\mcare\mCare\mCare\HCare.Server\bin\Debug\HCare.Server.dll
+D:\works\mcare\mCare\mCare\HCare.Server\bin\Debug\HCare.Server.pdb
+D:\works\mcare\mCare\mCare\HCare.Server\bin\Debug\HCare.Models.dll
+D:\works\mcare\mCare\mCare\HCare.Server\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\works\mcare\mCare\mCare\HCare.Server\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\works\mcare\mCare\mCare\HCare.Server\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\works\mcare\mCare\mCare\HCare.Server\bin\Debug\HCare.Models.pdb
+D:\works\mcare\mCare\mCare\HCare.Server\obj\Debug\HCare.Server.csprojResolveAssemblyReference.cache
+D:\works\mcare\mCare\mCare\HCare.Server\obj\Debug\HCare.Server.dll
+D:\works\mcare\mCare\mCare\HCare.Server\obj\Debug\HCare.Server.pdb
