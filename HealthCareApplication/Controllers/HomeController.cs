@@ -17,11 +17,11 @@ namespace HealthCareApplication.Controllers
         public ActionResult Index()
         {
             ViewBag.ServicesTab = ServicesData();
-            ViewBag.DoctorsTab = getAllDoctor();
+            ViewBag.DoctorsTab = getAllDoctor("1");
             ViewBag.DepartmentTab = getAllDepartment();
             ViewBag.Packages = getAllPackages();
             ViewBag.Blog = getAllBlog();
-            ViewBag.Medicine = getAllMedicine();
+            ViewBag.Medicine = getAllMedicine("1");
             return View();
         }
 
@@ -141,12 +141,13 @@ namespace HealthCareApplication.Controllers
             }
             return TableData;
         }
-        string getAllDoctor() {
+        string getAllDoctor(string ispromo) {
             string DoctorsData = "";
             HcDoctorinfoEntity obj = new HcDoctorinfoEntity();
             obj.Isactive = "Active";
             obj.Sortby = "yes";
             obj.Isview = "checked";
+            obj.ispromo = ispromo;
             DataTable dt = (DataTable)ExecuteDB(HCareTaks.AG_GetAllHcDoctorinfoRecord, obj);
             foreach (DataRow dr in dt.Rows)
             {
@@ -560,11 +561,12 @@ namespace HealthCareApplication.Controllers
             return View();
         }
 
-        string getAllMedicine()
+        string getAllMedicine(string ispromo)
         { 
             string MedicineData ="";
             HcMedicineEntity iGet = new HcMedicineEntity();
             iGet.FullView = true;
+            iGet.ispromo = ispromo;
 
             string noImage = "/Docx/no_image.png";
             
@@ -578,25 +580,30 @@ namespace HealthCareApplication.Controllers
 
                     MedicineData += @"<div class='card custome-card' style='background-color: #ffffff' >" +
                         "<a href = '/Home/Medicine/" + dpm["ID"] + "' target='_blank'>" +
-                        "<img class='card-img-top' src='" + medicineimage + "' alt='Packeage iamge'/>" +
+                        "<img class='card-img-top display_img' src='" + medicineimage + "' alt='Medicin imagae'/>" +
                             "<div class='card-body'>" +
                                 "<div class='row'>" +
                                     "<div class='col-md-12 col-lg-12'>" +
-                                     "<h3> &nbsp; $ " + dpm["Medicineprice"] + "</h3>" +
-                                         "<h4 class='card-title'>" + dpm["Medicinename"] + "</h4>" +
-                                         "<small>" + dpm["UoM"] + "</small>" +
-                                        "<p class='card-text text-truncate'>" + dpm["Medicinecompany"] + "</p>" +
-                                       
-                                         "<p class='card-text text-truncate'>" + dpm["Medicinetypename"] + "</p>" +
-                                          "<p class='card-text text-truncate'>" + dpm["categoryName"] + "</p>" +
+                                     "<h3>  " + dpm["Medicineprice"] + "</h3>" +
+                                         "<p class='card-title'> " + dpm["Medicinename"] + "</p>" +
+                                         " &nbsp;<span class='badge badge-pill badge-primary'> <small>" + dpm["UoM"] + "</small> </span>" +
+                                         "&nbsp; <span class='badge badge-pill badge-secondary'> <small>" + dpm["Medicinetypename"] + "</small> </span>" +
+                                         "&nbsp; <span class='badge badge-pill badge-info'> <small>" + dpm["categoryName"] + "</small> </span>" +
+
+                                        "<p class='card-text text-truncate'> " + dpm["Medicinecompany"] + "</p>" +
                                             
                                     "</div>" +
-
-                                 
+                            "</a>" +
+                                        "<div class='btn-group d-flex' role='group'>"+
+                                        " <span type='label' class='btn btn-default w-100'>Buy</span>"+
+                                        "<button type='button' class='btn btn-default w-100'>-</button>"+
+                                        "<button type='button' class='btn btn-default w-100'>+</button>"+
+                                        
+                                        "</div>"+                                
 
                                 "</div>" +
                             "</div>" +
-                           "</a>" +
+                           
                          "</div>";
 
 

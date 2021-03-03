@@ -135,7 +135,7 @@ COLOR2: #202c45
 }
 /* -------- Text Theme Color ---------- */
 .text-theme-colored {
-  color: #1196CC !important;
+  color: #1E7F69 !important;
 }
 .text-hover-theme-colored:hover {
   color: #1196CC !important;
@@ -576,8 +576,8 @@ fieldset[disabled] .btn-gray.btn-theme-colored.focus {
 */
 .btn-theme-colored {
   color: #fff;
-  background-color: #1196CC;
-  border-color: #1196CC;
+  background-color: #1E7F69;
+  border-color: #1E7F69;
 }
 .btn-theme-colored:focus,
 .btn-theme-colored.focus {

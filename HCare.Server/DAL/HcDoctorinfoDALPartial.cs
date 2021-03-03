@@ -54,6 +54,9 @@ namespace HCare.Server.DAL
 
                 if (!string.IsNullOrEmpty(obj.countryid))
                     sql += " And D.Country ='" + obj.countryid + "'";
+                if (!string.IsNullOrEmpty(obj.ispromo))
+                    sql += " And D.ispromo ='" + obj.ispromo + "'";
+
                 if (!string.IsNullOrEmpty(obj.Department))
                     sql += " And D.Department ='" + obj.Department + "'";
                 if (!string.IsNullOrEmpty(obj.Location))

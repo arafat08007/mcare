@@ -109,6 +109,8 @@ namespace HCare.Models
 
 
         public bool FullView { get; set; }
+
+        public string ispromo { get; set; }
     }
 }
 

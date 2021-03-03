@@ -59,7 +59,31 @@
                 </div>
             </div>
         </div>
-    </div>
+   </div> 
+
+          <form class="query_form">
+            <div class="form-group">
+              <label for="name" class="pull-left">Your name</label>
+              <input type="text" name="name" class="form-control" id="name" placeholder="your name">
+
+            </div>
+            <div class="form-group">
+              <label for="email" class="pull-left">Email</label>
+              <input type="email" name="email" class="form-control" placeholder="Email@email.dom" id="email">
+            </div>
+                <div class="form-group">
+              <label for="phone" class="pull-left">Phone</label>
+              <input type="number" name="email" class="form-control" placeholder="+8801 XXXXXXXX" id="phone">
+            </div>
+            <div class="form-group">
+              <label for="query" class="pull-left">Query</label>
+              <textarea  class="form-control" name="query" placeholder="Your query here" id="query"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" name="submit" class="btn btn-default" value="Send">
+            </div>
+          </form>
+   
 </section>
 <section>
     <div class="container pt-0 pb-0">
@@ -107,11 +131,7 @@
                     </p>
                     <a class="btn btn-theme-colored btn-lg btn-circled mt-30">More About Us</a>
                 </div>
-                <div class="col-md-5">
-                    <div class="">
-                        <img src="images/abc.jpg" alt="">
-                    </div>
-                </div>
+               
             </div>
         </div>
     </div>
@@ -252,7 +272,7 @@
         </div>
         <div class="row mtli-row-clearfix">
             <div class="col-md-12">
-                <div class="owl-carousel-2col">
+                <div class="owl-carousel-3col">
 
                     @Html.Raw(ViewBag.Packages)
 
@@ -277,7 +297,7 @@
         </div>
         <div class="row mtli-row-clearfix">
             <div class="col-md-12">
-                <div class="owl-carousel-2col">
+                <div class="owl-carousel-3col">
 
                     @Html.Raw(ViewBag.Blog)
 

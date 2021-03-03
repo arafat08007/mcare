@@ -158,6 +158,8 @@ namespace HCare.Models
             set;
         }
         public string Searchflag { get; set; }
+
+        public string ispromo { get; set; }
     }
 }
 
