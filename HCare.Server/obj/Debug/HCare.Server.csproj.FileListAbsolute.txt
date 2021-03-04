@@ -69,3 +69,13 @@ D:\works\mcare\mCare\mCare\HCare.Server\bin\Debug\HCare.Models.pdb
 D:\works\mcare\mCare\mCare\HCare.Server\obj\Debug\HCare.Server.csprojResolveAssemblyReference.cache
 D:\works\mcare\mCare\mCare\HCare.Server\obj\Debug\HCare.Server.dll
 D:\works\mcare\mCare\mCare\HCare.Server\obj\Debug\HCare.Server.pdb
+E:\mcare\Working\mcare\HCare.Server\bin\Debug\HCare.Server.dll
+E:\mcare\Working\mcare\HCare.Server\bin\Debug\HCare.Server.pdb
+E:\mcare\Working\mcare\HCare.Server\bin\Debug\HCare.Models.dll
+E:\mcare\Working\mcare\HCare.Server\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\mcare\Working\mcare\HCare.Server\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\mcare\Working\mcare\HCare.Server\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\mcare\Working\mcare\HCare.Server\bin\Debug\HCare.Models.pdb
+E:\mcare\Working\mcare\HCare.Server\obj\Debug\HCare.Server.csprojResolveAssemblyReference.cache
+E:\mcare\Working\mcare\HCare.Server\obj\Debug\HCare.Server.dll
+E:\mcare\Working\mcare\HCare.Server\obj\Debug\HCare.Server.pdb

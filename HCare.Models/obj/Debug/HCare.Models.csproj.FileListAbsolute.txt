@@ -29,3 +29,7 @@ D:\works\mcare\mCare\mCare\HCare.Models\bin\Debug\HCare.Models.dll
 D:\works\mcare\mCare\mCare\HCare.Models\bin\Debug\HCare.Models.pdb
 D:\works\mcare\mCare\mCare\HCare.Models\obj\Debug\HCare.Models.dll
 D:\works\mcare\mCare\mCare\HCare.Models\obj\Debug\HCare.Models.pdb
+E:\mcare\Working\mcare\HCare.Models\bin\Debug\HCare.Models.dll
+E:\mcare\Working\mcare\HCare.Models\bin\Debug\HCare.Models.pdb
+E:\mcare\Working\mcare\HCare.Models\obj\Debug\HCare.Models.dll
+E:\mcare\Working\mcare\HCare.Models\obj\Debug\HCare.Models.pdb

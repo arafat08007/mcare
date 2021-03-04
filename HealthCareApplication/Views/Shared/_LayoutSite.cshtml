@@ -32,7 +32,9 @@
       <script src="@Url.Content("~/Content/rkscript/js/jquery-2.2.4.min.js")" type="text/javascript"></script>
       <script src="@Url.Content("~/Content/rkscript/js/jquery-ui.min.js")" type="text/javascript"></script>
       <script src="@Url.Content("~/Content/rkscript/js/bootstrap.min.js")" type="text/javascript"></script>
+     <script crossorigin src="@Url.Content("~/Content/rkscript/js/daily-js.js")" type="text/javascript"></script>
         <script src="https://kit.fontawesome.com/a9d0189b67.js" crossorigin="anonymous"></script>
+        
      
       @*<script src="@Url.Content("~/Content/rkscript/js/jquery.simplePagination.js")" type="text/javascript"></script>*@
       <script src="@Url.Content("~/Content/rkscript/js/jquery-plugin-collection.js")" type="text/javascript"></script>
@@ -98,33 +100,6 @@
     }
    
 
-/*
-
-.container-mini
-{
-    padding: 20px !important;
-}
-
-         .product-card{
-         box-shadow: 1px 1px 8px #0000001a;
-         background: #ffffff;
-         border-radius: 7px;
-         min-height: 303px;
-         }
-         .sidebar-right{
-         background: #fff;
-         padding: 20px !important;
-         border-radius: 9px;
-         box-shadow: 0 0px 12px #0000001a;
-         }
-         .product-title{
-         white-space: pre;
-         word-break: break-all;
-         width: 94%;
-         overflow: hidden;
-         text-align: center;
-         text-overflow: ellipsis;
-         }*/
 </style>
 
 </head>
@@ -224,10 +199,11 @@
                                     <li><a href="@("/WebAccount/Login")" title="Log In"><i class="fa fa-user-circle" style="font-size:22px; color:Green; margin-top:7px; margin-right:-10px;"></i></a></li>
                                 }
                                 <li>
-                                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#cart"><i class="icon_cart_alt"></i> (<span class="cart-tcount">0</span>)</button>
+                                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#cart">@*<i class="icon_cart_alt"></i> *@(<span class="cart-tcount">0</span>)</button>
                                 </li>
                                 <a class="btn btn-colored btn-flat btn-theme-colored mt-15 mt-sm-10 pt-10 pb-10" href="@("/WebAccount/NewAppointment")">Appointment</a>
                                 <a class="btn  btn-flat btn-outline-success mt-15 mt-sm-10 pt-10 pb-10" href="@("/")">Download app</a>
+                                <a class="btn circle-btn  btn-blink mt-15 mt-sm-10 pt-10 pb-10" href="@("/Video/VideoCall")"><i class="fa fa-video-camera"></i> </a>
                             </ul>
                         </div>
                      </nav>

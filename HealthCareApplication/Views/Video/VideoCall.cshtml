@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "VideoCall";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+
+
+<div class="container">
+    <h2>Doctor Consultancy</h2>
+        @if (Session["UserId"] != null) {
+        <div class="row">
+            <br />
+         <div class="btn-group d-flex" role="group"> &nbsp; &nbsp;
+            <button class="btn btn-primary"  onclick="mtgJoin()">Join</button>
+            <button class="btn btn-danger"  onclick="mtgLeave()">Leave</button>
+           </div>
+        </div>
+            <hr />
+            <br />
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-xs-12">
+                 
+                    <div id="mtg-frame"  style=" min-height:200px; border:0;background-color:lightgrey;"></div>
+                 
+              
+            </div>
+        </div>
+        }
+    else {
+         <div class="wel"> <p>Sorry! you have no permission to start video consultancy.</p></div>
+    }
+</div>
+
+<script type="text/ecmascript">
+function mtgJoin() {
+    let callUrl = 'https://mcarebd.daily.co/hello-daily';
+if (!window.frame) {
+window.inp = document.getElementById('mtg-link');
+window.frame = window.DailyIframe.createFrame(
+document.getElementById('mtg-frame')
+);
+}
+window.frame.join({ url: callUrl });
+}
+function mtgLeave() {
+window.frame.leave();
+}
+</script>
+

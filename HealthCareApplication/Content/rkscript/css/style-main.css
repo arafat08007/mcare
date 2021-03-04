@@ -5489,7 +5489,7 @@ fieldset[disabled] .btn-gray.focus {
  * -----------------------------------------------
 */
 .bg-theme-colored3{
-  background: #599c2a;
+  background: #1E7F69;
 }
 blockquote {
   border-left: 3px solid #eeeeee;
@@ -5503,6 +5503,10 @@ blockquote.gray {
 }
 blockquote.gray.bg-theme-colored {
   background-color: #eeeeee;
+}
+.bg-theme-colored{
+
+     background: #1E7F75 !important;
 }
 blockquote.dark {
   border-left: 3px solid #3c3c3c;
