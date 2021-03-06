@@ -4,31 +4,67 @@
 }
 
 
+<link href="../../Content/rkscript/css/agora/index.css" rel="stylesheet" />
+
 <div class="container">
     <h2>Doctor Consultancy</h2>
-        @if (Session["UserId"] != null) {
+    <form id="join-form">
+         <input id="appid" type="hidden" value="486758bf06d448e9a61d6b864dc6b123" placeholder="enter appid" required>
+         <input id="token" type="hidden" value="006486758bf06d448e9a61d6b864dc6b123IAAkZLj105o6VqWsZJ8NDfAenrcrDT8p1QEeGLztvPh50Lgz1+cAAAAAEAAEa9nrDfZEYAEAAQAM9kRg" placeholder="enter token">
+         <input id="channel" type="hidden" value="mcare" placeholder="enter channel name" required>
+
+    
         <div class="row">
             <br />
          <div class="btn-group d-flex" role="group"> &nbsp; &nbsp;
-            <button class="btn btn-primary"  onclick="mtgJoin()">Join</button>
-            <button class="btn btn-danger"  onclick="mtgLeave()">Leave</button>
+            <button  id="join" type="submit"  class="btn btn-primary"  >Join</button>
+            <button id="leave" type="button" class="btn btn-danger"  ">Leave</button>
            </div>
         </div>
             <hr />
-            <br />
-        <div class="row">
-            <div class="col-md-12 col-lg-12 col-xs-12">
-                 
-                    <div id="mtg-frame"  style=" min-height:200px; border:0;background-color:lightgrey;"></div>
-                 
-              
+           
+  
+            
+            <div class="row video-group d-flex">
+            <div class="col-md-12 col-lg-12">
+            <p id="local-player-name" class="player-name"></p>
+            <div id="local-player" class="player"></div>
             </div>
-        </div>
-        }
-    else {
-         <div class="wel"> <p>Sorry! you have no permission to start video consultancy.</p></div>
-    }
+            <div class="w-100"></div>
+            <div class="col">
+            <div id="remote-playerlist"></div>
+            </div>
+            </div>
+            
+    
+         
+        </form>
 </div>
+
+<div class="container">
+    <div id="success-alert" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Congratulations!</strong><span> You can invite others join this channel by click </span><a href="" target="_blank">here</a>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div id="success-alert-with-token" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Congratulations!</strong><span> Joined room successfully. </span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div id="success-alert-with-token" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Congratulations!</strong><span> Joined room successfully. </span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+</div>
+<script src="../../Content/rkscript/js/agora/AgoraRTC_N-4.3.0.js"></script>
+<script src="../../Content/rkscript/js/agora/index.js"></script>
+
 
 <script type="text/ecmascript">
 function mtgJoin() {

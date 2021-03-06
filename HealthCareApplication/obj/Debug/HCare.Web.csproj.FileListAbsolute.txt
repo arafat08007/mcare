@@ -119,25 +119,6 @@ F:\ptvl all works\mCare\HealthCareApplication\bin\HCare.Server.pdb
 F:\ptvl all works\mCare\HealthCareApplication\obj\Debug\HCare.Web.csprojResolveAssemblyReference.cache
 F:\ptvl all works\mCare\HealthCareApplication\obj\Debug\HealthCareApplication.dll
 F:\ptvl all works\mCare\HealthCareApplication\obj\Debug\HealthCareApplication.pdb
-D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HealthCareApplication.dll
-D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HealthCareApplication.pdb
-D:\works\mcare\mCare\mCare\HealthCareApplication\bin\EntityFramework.dll
-D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HCare.Models.dll
-D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HCare.Structure.dll
-D:\works\mcare\mCare\mCare\HealthCareApplication\bin\Newtonsoft.Json.dll
-D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HCare.Server.dll
-D:\works\mcare\mCare\mCare\HealthCareApplication\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
-D:\works\mcare\mCare\mCare\HealthCareApplication\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
-D:\works\mcare\mCare\mCare\HealthCareApplication\bin\Microsoft.Practices.ObjectBuilder.dll
-D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HCare.Models.pdb
-D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HCare.Structure.pdb
-D:\works\mcare\mCare\mCare\HealthCareApplication\bin\EntityFramework.xml
-D:\works\mcare\mCare\mCare\HealthCareApplication\bin\Newtonsoft.Json.pdb
-D:\works\mcare\mCare\mCare\HealthCareApplication\bin\Newtonsoft.Json.xml
-D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HCare.Server.pdb
-D:\works\mcare\mCare\mCare\HealthCareApplication\obj\Debug\HCare.Web.csprojResolveAssemblyReference.cache
-D:\works\mcare\mCare\mCare\HealthCareApplication\obj\Debug\HealthCareApplication.dll
-D:\works\mcare\mCare\mCare\HealthCareApplication\obj\Debug\HealthCareApplication.pdb
 E:\mcare\Working\mcare\HealthCareApplication\bin\HealthCareApplication.dll
 E:\mcare\Working\mcare\HealthCareApplication\bin\HealthCareApplication.pdb
 E:\mcare\Working\mcare\HealthCareApplication\bin\EntityFramework.dll
@@ -157,3 +138,22 @@ E:\mcare\Working\mcare\HealthCareApplication\bin\HCare.Server.pdb
 E:\mcare\Working\mcare\HealthCareApplication\obj\Debug\HCare.Web.csprojResolveAssemblyReference.cache
 E:\mcare\Working\mcare\HealthCareApplication\obj\Debug\HealthCareApplication.dll
 E:\mcare\Working\mcare\HealthCareApplication\obj\Debug\HealthCareApplication.pdb
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HealthCareApplication.dll
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HealthCareApplication.pdb
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\EntityFramework.dll
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HCare.Models.dll
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HCare.Structure.dll
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\Newtonsoft.Json.dll
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HCare.Server.dll
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\Microsoft.Practices.ObjectBuilder.dll
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HCare.Models.pdb
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HCare.Structure.pdb
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\EntityFramework.xml
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\Newtonsoft.Json.pdb
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\Newtonsoft.Json.xml
+D:\works\mcare\mCare\mCare\HealthCareApplication\bin\HCare.Server.pdb
+D:\works\mcare\mCare\mCare\HealthCareApplication\obj\Debug\HCare.Web.csprojResolveAssemblyReference.cache
+D:\works\mcare\mCare\mCare\HealthCareApplication\obj\Debug\HealthCareApplication.dll
+D:\works\mcare\mCare\mCare\HealthCareApplication\obj\Debug\HealthCareApplication.pdb

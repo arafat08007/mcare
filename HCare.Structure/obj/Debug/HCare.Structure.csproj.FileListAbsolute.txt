@@ -71,18 +71,6 @@ F:\ptvl all works\mCare\HCare.Structure\bin\Debug\HCare.Models.pdb
 F:\ptvl all works\mCare\HCare.Structure\obj\Debug\HCare.Structure.csprojResolveAssemblyReference.cache
 F:\ptvl all works\mCare\HCare.Structure\obj\Debug\HCare.Structure.dll
 F:\ptvl all works\mCare\HCare.Structure\obj\Debug\HCare.Structure.pdb
-D:\works\mcare\mCare\mCare\HCare.Structure\bin\Debug\HCare.Structure.dll
-D:\works\mcare\mCare\mCare\HCare.Structure\bin\Debug\HCare.Structure.pdb
-D:\works\mcare\mCare\mCare\HCare.Structure\bin\Debug\HCare.Server.dll
-D:\works\mcare\mCare\mCare\HCare.Structure\bin\Debug\HCare.Models.dll
-D:\works\mcare\mCare\mCare\HCare.Structure\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
-D:\works\mcare\mCare\mCare\HCare.Structure\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
-D:\works\mcare\mCare\mCare\HCare.Structure\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
-D:\works\mcare\mCare\mCare\HCare.Structure\bin\Debug\HCare.Server.pdb
-D:\works\mcare\mCare\mCare\HCare.Structure\bin\Debug\HCare.Models.pdb
-D:\works\mcare\mCare\mCare\HCare.Structure\obj\Debug\HCare.Structure.csprojResolveAssemblyReference.cache
-D:\works\mcare\mCare\mCare\HCare.Structure\obj\Debug\HCare.Structure.dll
-D:\works\mcare\mCare\mCare\HCare.Structure\obj\Debug\HCare.Structure.pdb
 E:\mcare\Working\mcare\HCare.Structure\bin\Debug\HCare.Structure.dll
 E:\mcare\Working\mcare\HCare.Structure\bin\Debug\HCare.Structure.pdb
 E:\mcare\Working\mcare\HCare.Structure\bin\Debug\HCare.Server.dll
@@ -95,3 +83,15 @@ E:\mcare\Working\mcare\HCare.Structure\bin\Debug\HCare.Models.pdb
 E:\mcare\Working\mcare\HCare.Structure\obj\Debug\HCare.Structure.csprojResolveAssemblyReference.cache
 E:\mcare\Working\mcare\HCare.Structure\obj\Debug\HCare.Structure.dll
 E:\mcare\Working\mcare\HCare.Structure\obj\Debug\HCare.Structure.pdb
+D:\works\mcare\mCare\mCare\HCare.Structure\bin\Debug\HCare.Structure.dll
+D:\works\mcare\mCare\mCare\HCare.Structure\bin\Debug\HCare.Structure.pdb
+D:\works\mcare\mCare\mCare\HCare.Structure\bin\Debug\HCare.Server.dll
+D:\works\mcare\mCare\mCare\HCare.Structure\bin\Debug\HCare.Models.dll
+D:\works\mcare\mCare\mCare\HCare.Structure\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\works\mcare\mCare\mCare\HCare.Structure\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\works\mcare\mCare\mCare\HCare.Structure\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\works\mcare\mCare\mCare\HCare.Structure\bin\Debug\HCare.Server.pdb
+D:\works\mcare\mCare\mCare\HCare.Structure\bin\Debug\HCare.Models.pdb
+D:\works\mcare\mCare\mCare\HCare.Structure\obj\Debug\HCare.Structure.csprojResolveAssemblyReference.cache
+D:\works\mcare\mCare\mCare\HCare.Structure\obj\Debug\HCare.Structure.dll
+D:\works\mcare\mCare\mCare\HCare.Structure\obj\Debug\HCare.Structure.pdb
